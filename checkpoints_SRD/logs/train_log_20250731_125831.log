@@ -1,0 +1,1122 @@
+2025-07-31 12:58:31 -              Trainer: [    INFO] - ================================================================================
+2025-07-31 12:58:31 -              Trainer: [    INFO] - STARTING SHADOW REMOVAL TRAINING
+2025-07-31 12:58:31 -              Trainer: [    INFO] - Log file: ./checkpoints_SRD/logs/train_log_20250731_125831.log
+2025-07-31 12:58:31 -              Trainer: [    INFO] - ================================================================================
+2025-07-31 12:58:31 -              Trainer: [    INFO] - Random seed set to: 42
+2025-07-31 12:58:31 -              Trainer: [    INFO] - cudnn.deterministic: False
+2025-07-31 12:58:31 -              Trainer: [    INFO] - cudnn.benchmark: False
+2025-07-31 12:58:31 -              Trainer: [    INFO] - Training options: Namespace(batch_size=8, epoch=600, lr=0.0002, weight_decay=0.0001, num_workers=4, use_cuda=True, checkpoint_dir='checkpoints_SRD', best_model_path='./checkpoints_SRD/model_best_SRD.pth', final_model_path='./checkpoints_SRD/model_final_SRD.pth', result_dir='./result_SRD', log_dir='./checkpoints_SRD/logs', augment=True, img_size=256, train_data_dir='/media/luosihui/Dataset/SRD/train/', test_data_dir='/media/luosihui/Dataset/SRD/test/', validation_freq=1000, warmup_epochs=10, use_mixup=False, mixup_start_epoch=10, use_amp=False, seed=42, deterministic=False, cudnn_benchmark=False)
+2025-07-31 12:58:31 -              Trainer: [    INFO] - Using device: cuda
+2025-07-31 12:58:32 -              Trainer: [    INFO] - Model initialized: StructFormer
+2025-07-31 12:58:32 -              Trainer: [    INFO] - Optimizer: AdamW (lr=0.0002, weight_decay=0.0001)
+2025-07-31 12:58:32 -              Trainer: [    INFO] - Loss function: CharbonnierLoss
+2025-07-31 12:58:32 -              Trainer: [    INFO] - Training for 600 epochs with validation every 1000 iterations
+2025-07-31 13:00:13 -              Trainer: [    INFO] - Epoch [1/600] completed in 100.79s | Loss: 0.4534 | SSIM: 0.0331 | PSNR: 2.26 | LR: 0.00000000
+2025-07-31 13:01:53 -              Trainer: [    INFO] - Epoch [2/600] completed in 100.36s | Loss: 0.1769 | SSIM: 0.1878 | PSNR: 7.54 | LR: 0.00002000
+2025-07-31 13:03:32 -              Trainer: [    INFO] - Validating at iteration 1000...
+2025-07-31 13:03:41 -              Trainer: [    INFO] - Validation results | SSIM=0.6505, PSNR=18.54
+2025-07-31 13:03:41 -              Trainer: [    INFO] - saved new best model at iter 1000 with PSNR 18.54 to ./checkpoints_SRD/model_best_SRD.pth
+2025-07-31 13:03:43 -              Trainer: [    INFO] - Epoch [3/600] completed in 109.74s | Loss: 0.0686 | SSIM: 0.5290 | PSNR: 15.70 | LR: 0.00004000
+2025-07-31 13:05:23 -              Trainer: [    INFO] - Epoch [4/600] completed in 100.44s | Loss: 0.0426 | SSIM: 0.7530 | PSNR: 21.58 | LR: 0.00006000
+2025-07-31 13:07:04 -              Trainer: [    INFO] - Epoch [5/600] completed in 100.57s | Loss: 0.0329 | SSIM: 0.8391 | PSNR: 24.47 | LR: 0.00008000
+2025-07-31 13:08:41 -              Trainer: [    INFO] - Validating at iteration 2000...
+2025-07-31 13:08:51 -              Trainer: [    INFO] - Validation results | SSIM=0.8726, PSNR=26.04
+2025-07-31 13:08:51 -              Trainer: [    INFO] - saved new best model at iter 2000 with PSNR 26.04 to ./checkpoints_SRD/model_best_SRD.pth
+2025-07-31 13:08:54 -              Trainer: [    INFO] - Epoch [6/600] completed in 109.75s | Loss: 0.0282 | SSIM: 0.8772 | PSNR: 26.08 | LR: 0.00010000
+2025-07-31 13:10:34 -              Trainer: [    INFO] - Epoch [7/600] completed in 100.30s | Loss: 0.0259 | SSIM: 0.8954 | PSNR: 27.03 | LR: 0.00012000
+2025-07-31 13:12:15 -              Trainer: [    INFO] - Epoch [8/600] completed in 100.64s | Loss: 0.0243 | SSIM: 0.9077 | PSNR: 27.66 | LR: 0.00014000
+2025-07-31 13:13:51 -              Trainer: [    INFO] - Validating at iteration 3000...
+2025-07-31 13:14:00 -              Trainer: [    INFO] - Validation results | SSIM=0.8997, PSNR=27.91
+2025-07-31 13:14:00 -              Trainer: [    INFO] - saved new best model at iter 3000 with PSNR 27.91 to ./checkpoints_SRD/model_best_SRD.pth
+2025-07-31 13:14:04 -              Trainer: [    INFO] - Epoch [9/600] completed in 109.86s | Loss: 0.0238 | SSIM: 0.9150 | PSNR: 27.95 | LR: 0.00016000
+2025-07-31 13:15:45 -              Trainer: [    INFO] - Epoch [10/600] completed in 100.58s | Loss: 0.0223 | SSIM: 0.9225 | PSNR: 28.58 | LR: 0.00018000
+2025-07-31 13:17:26 -              Trainer: [    INFO] - Epoch [11/600] completed in 100.59s | Loss: 0.0222 | SSIM: 0.9257 | PSNR: 28.59 | LR: 0.00020000
+2025-07-31 13:19:00 -              Trainer: [    INFO] - Validating at iteration 4000...
+2025-07-31 13:19:10 -              Trainer: [    INFO] - Validation results | SSIM=0.9111, PSNR=28.76
+2025-07-31 13:19:10 -              Trainer: [    INFO] - saved new best model at iter 4000 with PSNR 28.76 to ./checkpoints_SRD/model_best_SRD.pth
+2025-07-31 13:19:16 -              Trainer: [    INFO] - Epoch [12/600] completed in 110.44s | Loss: 0.0213 | SSIM: 0.9298 | PSNR: 28.96 | LR: 0.00020000
+2025-07-31 13:20:57 -              Trainer: [    INFO] - Epoch [13/600] completed in 100.57s | Loss: 0.0205 | SSIM: 0.9337 | PSNR: 29.24 | LR: 0.00020000
+2025-07-31 13:22:37 -              Trainer: [    INFO] - Epoch [14/600] completed in 100.52s | Loss: 0.0200 | SSIM: 0.9362 | PSNR: 29.58 | LR: 0.00019999
+2025-07-31 13:24:10 -              Trainer: [    INFO] - Validating at iteration 5000...
+2025-07-31 13:24:20 -              Trainer: [    INFO] - Validation results | SSIM=0.9187, PSNR=29.06
+2025-07-31 13:24:20 -              Trainer: [    INFO] - saved new best model at iter 5000 with PSNR 29.06 to ./checkpoints_SRD/model_best_SRD.pth
+2025-07-31 13:24:28 -              Trainer: [    INFO] - Epoch [15/600] completed in 110.33s | Loss: 0.0198 | SSIM: 0.9377 | PSNR: 29.63 | LR: 0.00019999
+2025-07-31 13:26:08 -              Trainer: [    INFO] - Epoch [16/600] completed in 100.51s | Loss: 0.0193 | SSIM: 0.9398 | PSNR: 29.84 | LR: 0.00019998
+2025-07-31 13:27:49 -              Trainer: [    INFO] - Epoch [17/600] completed in 100.54s | Loss: 0.0191 | SSIM: 0.9408 | PSNR: 29.89 | LR: 0.00019997
+2025-07-31 13:29:20 -              Trainer: [    INFO] - Validating at iteration 6000...
+2025-07-31 13:29:30 -              Trainer: [    INFO] - Validation results | SSIM=0.9222, PSNR=29.90
+2025-07-31 13:29:30 -              Trainer: [    INFO] - saved new best model at iter 6000 with PSNR 29.90 to ./checkpoints_SRD/model_best_SRD.pth
+2025-07-31 13:29:39 -              Trainer: [    INFO] - Epoch [18/600] completed in 110.43s | Loss: 0.0187 | SSIM: 0.9427 | PSNR: 30.14 | LR: 0.00019995
+2025-07-31 13:31:19 -              Trainer: [    INFO] - Epoch [19/600] completed in 100.46s | Loss: 0.0183 | SSIM: 0.9434 | PSNR: 30.31 | LR: 0.00019993
+2025-07-31 13:33:00 -              Trainer: [    INFO] - Epoch [20/600] completed in 100.46s | Loss: 0.0179 | SSIM: 0.9452 | PSNR: 30.52 | LR: 0.00019991
+2025-07-31 13:34:30 -              Trainer: [    INFO] - Validating at iteration 7000...
+2025-07-31 13:34:40 -              Trainer: [    INFO] - Validation results | SSIM=0.9250, PSNR=29.71
+2025-07-31 13:34:50 -              Trainer: [    INFO] - Epoch [21/600] completed in 110.35s | Loss: 0.0179 | SSIM: 0.9456 | PSNR: 30.57 | LR: 0.00019989
+2025-07-31 13:36:31 -              Trainer: [    INFO] - Epoch [22/600] completed in 100.50s | Loss: 0.0178 | SSIM: 0.9457 | PSNR: 30.58 | LR: 0.00019986
+2025-07-31 13:38:11 -              Trainer: [    INFO] - Epoch [23/600] completed in 100.53s | Loss: 0.0175 | SSIM: 0.9468 | PSNR: 30.79 | LR: 0.00019983
+2025-07-31 13:39:40 -              Trainer: [    INFO] - Validating at iteration 8000...
+2025-07-31 13:39:50 -              Trainer: [    INFO] - Validation results | SSIM=0.9285, PSNR=30.06
+2025-07-31 13:39:50 -              Trainer: [    INFO] - saved new best model at iter 8000 with PSNR 30.06 to ./checkpoints_SRD/model_best_SRD.pth
+2025-07-31 13:40:02 -              Trainer: [    INFO] - Epoch [24/600] completed in 110.47s | Loss: 0.0173 | SSIM: 0.9474 | PSNR: 30.90 | LR: 0.00019980
+2025-07-31 13:41:42 -              Trainer: [    INFO] - Epoch [25/600] completed in 100.59s | Loss: 0.0170 | SSIM: 0.9486 | PSNR: 31.02 | LR: 0.00019977
+2025-07-31 13:43:23 -              Trainer: [    INFO] - Epoch [26/600] completed in 100.55s | Loss: 0.0170 | SSIM: 0.9486 | PSNR: 31.05 | LR: 0.00019973
+2025-07-31 13:44:50 -              Trainer: [    INFO] - Validating at iteration 9000...
+2025-07-31 13:45:00 -              Trainer: [    INFO] - Validation results | SSIM=0.9321, PSNR=31.03
+2025-07-31 13:45:00 -              Trainer: [    INFO] - saved new best model at iter 9000 with PSNR 31.03 to ./checkpoints_SRD/model_best_SRD.pth
+2025-07-31 13:45:14 -              Trainer: [    INFO] - Epoch [27/600] completed in 110.61s | Loss: 0.0167 | SSIM: 0.9497 | PSNR: 31.19 | LR: 0.00019969
+2025-07-31 13:46:54 -              Trainer: [    INFO] - Epoch [28/600] completed in 100.54s | Loss: 0.0166 | SSIM: 0.9500 | PSNR: 31.23 | LR: 0.00019965
+2025-07-31 13:48:35 -              Trainer: [    INFO] - Epoch [29/600] completed in 100.64s | Loss: 0.0162 | SSIM: 0.9509 | PSNR: 31.46 | LR: 0.00019960
+2025-07-31 13:50:01 -              Trainer: [    INFO] - Validating at iteration 10000...
+2025-07-31 13:50:10 -              Trainer: [    INFO] - Validation results | SSIM=0.9318, PSNR=30.64
+2025-07-31 13:50:25 -              Trainer: [    INFO] - Epoch [30/600] completed in 110.23s | Loss: 0.0161 | SSIM: 0.9516 | PSNR: 31.55 | LR: 0.00019956
+2025-07-31 13:52:06 -              Trainer: [    INFO] - Epoch [31/600] completed in 100.52s | Loss: 0.0159 | SSIM: 0.9521 | PSNR: 31.64 | LR: 0.00019951
+2025-07-31 13:53:46 -              Trainer: [    INFO] - Epoch [32/600] completed in 100.53s | Loss: 0.0158 | SSIM: 0.9523 | PSNR: 31.67 | LR: 0.00019945
+2025-07-31 13:55:10 -              Trainer: [    INFO] - Validating at iteration 11000...
+2025-07-31 13:55:20 -              Trainer: [    INFO] - Validation results | SSIM=0.9351, PSNR=31.14
+2025-07-31 13:55:20 -              Trainer: [    INFO] - saved new best model at iter 11000 with PSNR 31.14 to ./checkpoints_SRD/model_best_SRD.pth
+2025-07-31 13:55:36 -              Trainer: [    INFO] - Epoch [33/600] completed in 110.41s | Loss: 0.0158 | SSIM: 0.9527 | PSNR: 31.67 | LR: 0.00019940
+2025-07-31 13:57:17 -              Trainer: [    INFO] - Epoch [34/600] completed in 100.52s | Loss: 0.0154 | SSIM: 0.9533 | PSNR: 31.97 | LR: 0.00019934
+2025-07-31 13:58:58 -              Trainer: [    INFO] - Epoch [35/600] completed in 100.55s | Loss: 0.0154 | SSIM: 0.9538 | PSNR: 31.91 | LR: 0.00019928
+2025-07-31 14:00:20 -              Trainer: [    INFO] - Validating at iteration 12000...
+2025-07-31 14:00:30 -              Trainer: [    INFO] - Validation results | SSIM=0.9357, PSNR=31.38
+2025-07-31 14:00:30 -              Trainer: [    INFO] - saved new best model at iter 12000 with PSNR 31.38 to ./checkpoints_SRD/model_best_SRD.pth
+2025-07-31 14:00:48 -              Trainer: [    INFO] - Epoch [36/600] completed in 110.26s | Loss: 0.0152 | SSIM: 0.9539 | PSNR: 32.01 | LR: 0.00019921
+2025-07-31 14:02:28 -              Trainer: [    INFO] - Epoch [37/600] completed in 100.51s | Loss: 0.0152 | SSIM: 0.9542 | PSNR: 32.10 | LR: 0.00019914
+2025-07-31 14:04:09 -              Trainer: [    INFO] - Epoch [38/600] completed in 100.60s | Loss: 0.0150 | SSIM: 0.9547 | PSNR: 32.22 | LR: 0.00019907
+2025-07-31 14:05:30 -              Trainer: [    INFO] - Validating at iteration 13000...
+2025-07-31 14:05:40 -              Trainer: [    INFO] - Validation results | SSIM=0.9370, PSNR=31.32
+2025-07-31 14:05:59 -              Trainer: [    INFO] - Epoch [39/600] completed in 110.08s | Loss: 0.0152 | SSIM: 0.9549 | PSNR: 32.08 | LR: 0.00019900
+2025-07-31 14:07:39 -              Trainer: [    INFO] - Epoch [40/600] completed in 100.44s | Loss: 0.0148 | SSIM: 0.9553 | PSNR: 32.29 | LR: 0.00019893
+2025-07-31 14:09:20 -              Trainer: [    INFO] - Epoch [41/600] completed in 100.49s | Loss: 0.0149 | SSIM: 0.9555 | PSNR: 32.23 | LR: 0.00019885
+2025-07-31 14:10:40 -              Trainer: [    INFO] - Validating at iteration 14000...
+2025-07-31 14:10:49 -              Trainer: [    INFO] - Validation results | SSIM=0.9393, PSNR=32.04
+2025-07-31 14:10:49 -              Trainer: [    INFO] - saved new best model at iter 14000 with PSNR 32.04 to ./checkpoints_SRD/model_best_SRD.pth
+2025-07-31 14:11:10 -              Trainer: [    INFO] - Epoch [42/600] completed in 110.26s | Loss: 0.0144 | SSIM: 0.9565 | PSNR: 32.53 | LR: 0.00019877
+2025-07-31 14:12:51 -              Trainer: [    INFO] - Epoch [43/600] completed in 100.54s | Loss: 0.0145 | SSIM: 0.9564 | PSNR: 32.45 | LR: 0.00019869
+2025-07-31 14:14:31 -              Trainer: [    INFO] - Epoch [44/600] completed in 100.53s | Loss: 0.0145 | SSIM: 0.9567 | PSNR: 32.53 | LR: 0.00019860
+2025-07-31 14:15:49 -              Trainer: [    INFO] - Validating at iteration 15000...
+2025-07-31 14:15:59 -              Trainer: [    INFO] - Validation results | SSIM=0.9388, PSNR=31.92
+2025-07-31 14:16:21 -              Trainer: [    INFO] - Epoch [45/600] completed in 110.01s | Loss: 0.0145 | SSIM: 0.9566 | PSNR: 32.43 | LR: 0.00019851
+2025-07-31 14:18:02 -              Trainer: [    INFO] - Epoch [46/600] completed in 100.66s | Loss: 0.0142 | SSIM: 0.9575 | PSNR: 32.70 | LR: 0.00019842
+2025-07-31 14:19:42 -              Trainer: [    INFO] - Epoch [47/600] completed in 100.53s | Loss: 0.0142 | SSIM: 0.9572 | PSNR: 32.64 | LR: 0.00019833
+2025-07-31 14:20:59 -              Trainer: [    INFO] - Validating at iteration 16000...
+2025-07-31 14:21:09 -              Trainer: [    INFO] - Validation results | SSIM=0.9407, PSNR=32.27
+2025-07-31 14:21:09 -              Trainer: [    INFO] - saved new best model at iter 16000 with PSNR 32.27 to ./checkpoints_SRD/model_best_SRD.pth
+2025-07-31 14:21:33 -              Trainer: [    INFO] - Epoch [48/600] completed in 110.23s | Loss: 0.0140 | SSIM: 0.9582 | PSNR: 32.84 | LR: 0.00019823
+2025-07-31 14:23:13 -              Trainer: [    INFO] - Epoch [49/600] completed in 100.44s | Loss: 0.0140 | SSIM: 0.9584 | PSNR: 32.76 | LR: 0.00019813
+2025-07-31 14:24:54 -              Trainer: [    INFO] - Epoch [50/600] completed in 100.61s | Loss: 0.0140 | SSIM: 0.9586 | PSNR: 32.78 | LR: 0.00019803
+2025-07-31 14:24:54 -              Trainer: [    INFO] - Saved periodic model checkpoint to checkpoints_SRD/model_epoch_50_SRD.pth
+2025-07-31 14:26:09 -              Trainer: [    INFO] - Validating at iteration 17000...
+2025-07-31 14:26:19 -              Trainer: [    INFO] - Validation results | SSIM=0.9405, PSNR=32.20
+2025-07-31 14:26:44 -              Trainer: [    INFO] - Epoch [51/600] completed in 110.05s | Loss: 0.0140 | SSIM: 0.9587 | PSNR: 32.80 | LR: 0.00019792
+2025-07-31 14:28:25 -              Trainer: [    INFO] - Epoch [52/600] completed in 100.57s | Loss: 0.0138 | SSIM: 0.9591 | PSNR: 32.88 | LR: 0.00019781
+2025-07-31 14:30:05 -              Trainer: [    INFO] - Epoch [53/600] completed in 100.55s | Loss: 0.0137 | SSIM: 0.9597 | PSNR: 32.98 | LR: 0.00019770
+2025-07-31 14:31:19 -              Trainer: [    INFO] - Validating at iteration 18000...
+2025-07-31 14:31:28 -              Trainer: [    INFO] - Validation results | SSIM=0.9412, PSNR=32.06
+2025-07-31 14:31:55 -              Trainer: [    INFO] - Epoch [54/600] completed in 109.92s | Loss: 0.0135 | SSIM: 0.9599 | PSNR: 33.09 | LR: 0.00019759
+2025-07-31 14:33:36 -              Trainer: [    INFO] - Epoch [55/600] completed in 100.72s | Loss: 0.0136 | SSIM: 0.9602 | PSNR: 32.90 | LR: 0.00019748
+2025-07-31 14:35:16 -              Trainer: [    INFO] - Epoch [56/600] completed in 100.67s | Loss: 0.0132 | SSIM: 0.9610 | PSNR: 33.18 | LR: 0.00019736
+2025-07-31 14:36:29 -              Trainer: [    INFO] - Validating at iteration 19000...
+2025-07-31 14:36:38 -              Trainer: [    INFO] - Validation results | SSIM=0.9428, PSNR=32.65
+2025-07-31 14:36:38 -              Trainer: [    INFO] - saved new best model at iter 19000 with PSNR 32.65 to ./checkpoints_SRD/model_best_SRD.pth
+2025-07-31 14:37:06 -              Trainer: [    INFO] - Epoch [57/600] completed in 110.08s | Loss: 0.0134 | SSIM: 0.9606 | PSNR: 33.01 | LR: 0.00019724
+2025-07-31 14:38:47 -              Trainer: [    INFO] - Epoch [58/600] completed in 100.61s | Loss: 0.0133 | SSIM: 0.9613 | PSNR: 33.15 | LR: 0.00019711
+2025-07-31 14:40:28 -              Trainer: [    INFO] - Epoch [59/600] completed in 100.77s | Loss: 0.0133 | SSIM: 0.9611 | PSNR: 33.07 | LR: 0.00019699
+2025-07-31 14:41:39 -              Trainer: [    INFO] - Validating at iteration 20000...
+2025-07-31 14:41:48 -              Trainer: [    INFO] - Validation results | SSIM=0.9431, PSNR=32.37
+2025-07-31 14:42:18 -              Trainer: [    INFO] - Epoch [60/600] completed in 110.03s | Loss: 0.0131 | SSIM: 0.9615 | PSNR: 33.27 | LR: 0.00019686
+2025-07-31 14:43:58 -              Trainer: [    INFO] - Epoch [61/600] completed in 100.56s | Loss: 0.0130 | SSIM: 0.9620 | PSNR: 33.27 | LR: 0.00019673
+2025-07-31 14:45:39 -              Trainer: [    INFO] - Epoch [62/600] completed in 100.58s | Loss: 0.0132 | SSIM: 0.9618 | PSNR: 33.12 | LR: 0.00019659
+2025-07-31 14:46:48 -              Trainer: [    INFO] - Validating at iteration 21000...
+2025-07-31 14:46:57 -              Trainer: [    INFO] - Validation results | SSIM=0.9434, PSNR=32.26
+2025-07-31 14:47:29 -              Trainer: [    INFO] - Epoch [63/600] completed in 109.75s | Loss: 0.0132 | SSIM: 0.9616 | PSNR: 33.14 | LR: 0.00019646
+2025-07-31 14:49:09 -              Trainer: [    INFO] - Epoch [64/600] completed in 100.57s | Loss: 0.0130 | SSIM: 0.9620 | PSNR: 33.30 | LR: 0.00019632
+2025-07-31 14:50:50 -              Trainer: [    INFO] - Epoch [65/600] completed in 100.69s | Loss: 0.0130 | SSIM: 0.9622 | PSNR: 33.20 | LR: 0.00019617
+2025-07-31 14:51:58 -              Trainer: [    INFO] - Validating at iteration 22000...
+2025-07-31 14:52:07 -              Trainer: [    INFO] - Validation results | SSIM=0.9439, PSNR=31.16
+2025-07-31 14:52:40 -              Trainer: [    INFO] - Epoch [66/600] completed in 109.91s | Loss: 0.0129 | SSIM: 0.9625 | PSNR: 33.40 | LR: 0.00019603
+2025-07-31 14:54:21 -              Trainer: [    INFO] - Epoch [67/600] completed in 100.63s | Loss: 0.0128 | SSIM: 0.9627 | PSNR: 33.53 | LR: 0.00019588
+2025-07-31 14:56:01 -              Trainer: [    INFO] - Epoch [68/600] completed in 100.53s | Loss: 0.0129 | SSIM: 0.9626 | PSNR: 33.30 | LR: 0.00019573
+2025-07-31 14:57:07 -              Trainer: [    INFO] - Validating at iteration 23000...
+2025-07-31 14:57:17 -              Trainer: [    INFO] - Validation results | SSIM=0.9448, PSNR=32.69
+2025-07-31 14:57:17 -              Trainer: [    INFO] - saved new best model at iter 23000 with PSNR 32.69 to ./checkpoints_SRD/model_best_SRD.pth
+2025-07-31 14:57:51 -              Trainer: [    INFO] - Epoch [69/600] completed in 109.89s | Loss: 0.0129 | SSIM: 0.9627 | PSNR: 33.35 | LR: 0.00019558
+2025-07-31 14:59:31 -              Trainer: [    INFO] - Epoch [70/600] completed in 100.49s | Loss: 0.0128 | SSIM: 0.9629 | PSNR: 33.45 | LR: 0.00019542
+2025-07-31 15:01:12 -              Trainer: [    INFO] - Epoch [71/600] completed in 100.52s | Loss: 0.0126 | SSIM: 0.9633 | PSNR: 33.55 | LR: 0.00019527
+2025-07-31 15:02:17 -              Trainer: [    INFO] - Validating at iteration 24000...
+2025-07-31 15:02:27 -              Trainer: [    INFO] - Validation results | SSIM=0.9457, PSNR=32.57
+2025-07-31 15:03:02 -              Trainer: [    INFO] - Epoch [72/600] completed in 110.22s | Loss: 0.0127 | SSIM: 0.9632 | PSNR: 33.47 | LR: 0.00019511
+2025-07-31 15:04:43 -              Trainer: [    INFO] - Epoch [73/600] completed in 100.43s | Loss: 0.0125 | SSIM: 0.9634 | PSNR: 33.61 | LR: 0.00019494
+2025-07-31 15:06:23 -              Trainer: [    INFO] - Epoch [74/600] completed in 100.54s | Loss: 0.0127 | SSIM: 0.9633 | PSNR: 33.67 | LR: 0.00019478
+2025-07-31 15:07:26 -              Trainer: [    INFO] - Validating at iteration 25000...
+2025-07-31 15:07:36 -              Trainer: [    INFO] - Validation results | SSIM=0.9459, PSNR=32.89
+2025-07-31 15:07:36 -              Trainer: [    INFO] - saved new best model at iter 25000 with PSNR 32.89 to ./checkpoints_SRD/model_best_SRD.pth
+2025-07-31 15:08:13 -              Trainer: [    INFO] - Epoch [75/600] completed in 109.80s | Loss: 0.0125 | SSIM: 0.9636 | PSNR: 33.75 | LR: 0.00019461
+2025-07-31 15:09:54 -              Trainer: [    INFO] - Epoch [76/600] completed in 100.68s | Loss: 0.0124 | SSIM: 0.9639 | PSNR: 33.87 | LR: 0.00019444
+2025-07-31 15:11:34 -              Trainer: [    INFO] - Epoch [77/600] completed in 100.48s | Loss: 0.0124 | SSIM: 0.9638 | PSNR: 33.80 | LR: 0.00019426
+2025-07-31 15:12:36 -              Trainer: [    INFO] - Validating at iteration 26000...
+2025-07-31 15:12:46 -              Trainer: [    INFO] - Validation results | SSIM=0.9457, PSNR=32.79
+2025-07-31 15:13:24 -              Trainer: [    INFO] - Epoch [78/600] completed in 110.08s | Loss: 0.0125 | SSIM: 0.9638 | PSNR: 33.77 | LR: 0.00019409
+2025-07-31 15:15:05 -              Trainer: [    INFO] - Epoch [79/600] completed in 100.64s | Loss: 0.0123 | SSIM: 0.9640 | PSNR: 33.93 | LR: 0.00019391
+2025-07-31 15:16:46 -              Trainer: [    INFO] - Epoch [80/600] completed in 100.65s | Loss: 0.0123 | SSIM: 0.9641 | PSNR: 33.87 | LR: 0.00019373
+2025-07-31 15:17:46 -              Trainer: [    INFO] - Validating at iteration 27000...
+2025-07-31 15:17:55 -              Trainer: [    INFO] - Validation results | SSIM=0.9468, PSNR=33.09
+2025-07-31 15:17:55 -              Trainer: [    INFO] - saved new best model at iter 27000 with PSNR 33.09 to ./checkpoints_SRD/model_best_SRD.pth
+2025-07-31 15:18:35 -              Trainer: [    INFO] - Epoch [81/600] completed in 109.81s | Loss: 0.0122 | SSIM: 0.9644 | PSNR: 33.93 | LR: 0.00019354
+2025-07-31 15:20:16 -              Trainer: [    INFO] - Epoch [82/600] completed in 100.43s | Loss: 0.0123 | SSIM: 0.9643 | PSNR: 33.88 | LR: 0.00019336
+2025-07-31 15:21:56 -              Trainer: [    INFO] - Epoch [83/600] completed in 100.54s | Loss: 0.0125 | SSIM: 0.9638 | PSNR: 33.61 | LR: 0.00019317
+2025-07-31 15:22:55 -              Trainer: [    INFO] - Validating at iteration 28000...
+2025-07-31 15:23:04 -              Trainer: [    INFO] - Validation results | SSIM=0.9466, PSNR=33.02
+2025-07-31 15:23:46 -              Trainer: [    INFO] - Epoch [84/600] completed in 109.82s | Loss: 0.0125 | SSIM: 0.9636 | PSNR: 33.66 | LR: 0.00019298
+2025-07-31 15:25:27 -              Trainer: [    INFO] - Epoch [85/600] completed in 100.45s | Loss: 0.0122 | SSIM: 0.9645 | PSNR: 33.85 | LR: 0.00019278
+2025-07-31 15:27:07 -              Trainer: [    INFO] - Epoch [86/600] completed in 100.33s | Loss: 0.0121 | SSIM: 0.9646 | PSNR: 34.07 | LR: 0.00019259
+2025-07-31 15:28:04 -              Trainer: [    INFO] - Validating at iteration 29000...
+2025-07-31 15:28:13 -              Trainer: [    INFO] - Validation results | SSIM=0.9468, PSNR=33.14
+2025-07-31 15:28:14 -              Trainer: [    INFO] - saved new best model at iter 29000 with PSNR 33.14 to ./checkpoints_SRD/model_best_SRD.pth
+2025-07-31 15:28:57 -              Trainer: [    INFO] - Epoch [87/600] completed in 109.84s | Loss: 0.0121 | SSIM: 0.9647 | PSNR: 34.02 | LR: 0.00019239
+2025-07-31 15:30:37 -              Trainer: [    INFO] - Epoch [88/600] completed in 100.43s | Loss: 0.0120 | SSIM: 0.9649 | PSNR: 34.16 | LR: 0.00019219
+2025-07-31 15:32:18 -              Trainer: [    INFO] - Epoch [89/600] completed in 100.50s | Loss: 0.0120 | SSIM: 0.9648 | PSNR: 33.98 | LR: 0.00019198
+2025-07-31 15:33:13 -              Trainer: [    INFO] - Validating at iteration 30000...
+2025-07-31 15:33:23 -              Trainer: [    INFO] - Validation results | SSIM=0.9479, PSNR=33.35
+2025-07-31 15:33:23 -              Trainer: [    INFO] - saved new best model at iter 30000 with PSNR 33.35 to ./checkpoints_SRD/model_best_SRD.pth
+2025-07-31 15:34:08 -              Trainer: [    INFO] - Epoch [90/600] completed in 109.82s | Loss: 0.0119 | SSIM: 0.9649 | PSNR: 34.20 | LR: 0.00019178
+2025-07-31 15:35:48 -              Trainer: [    INFO] - Epoch [91/600] completed in 100.39s | Loss: 0.0119 | SSIM: 0.9652 | PSNR: 34.10 | LR: 0.00019157
+2025-07-31 15:37:28 -              Trainer: [    INFO] - Epoch [92/600] completed in 100.44s | Loss: 0.0118 | SSIM: 0.9653 | PSNR: 34.22 | LR: 0.00019135
+2025-07-31 15:38:23 -              Trainer: [    INFO] - Validating at iteration 31000...
+2025-07-31 15:38:32 -              Trainer: [    INFO] - Validation results | SSIM=0.9478, PSNR=33.20
+2025-07-31 15:39:18 -              Trainer: [    INFO] - Epoch [93/600] completed in 109.72s | Loss: 0.0119 | SSIM: 0.9651 | PSNR: 34.20 | LR: 0.00019114
+2025-07-31 15:40:59 -              Trainer: [    INFO] - Epoch [94/600] completed in 100.58s | Loss: 0.0118 | SSIM: 0.9655 | PSNR: 34.28 | LR: 0.00019092
+2025-07-31 15:42:39 -              Trainer: [    INFO] - Epoch [95/600] completed in 100.49s | Loss: 0.0118 | SSIM: 0.9654 | PSNR: 34.17 | LR: 0.00019070
+2025-07-31 15:43:32 -              Trainer: [    INFO] - Validating at iteration 32000...
+2025-07-31 15:43:41 -              Trainer: [    INFO] - Validation results | SSIM=0.9482, PSNR=33.40
+2025-07-31 15:43:41 -              Trainer: [    INFO] - saved new best model at iter 32000 with PSNR 33.40 to ./checkpoints_SRD/model_best_SRD.pth
+2025-07-31 15:44:29 -              Trainer: [    INFO] - Epoch [96/600] completed in 109.58s | Loss: 0.0118 | SSIM: 0.9655 | PSNR: 34.29 | LR: 0.00019048
+2025-07-31 15:46:09 -              Trainer: [    INFO] - Epoch [97/600] completed in 100.64s | Loss: 0.0117 | SSIM: 0.9655 | PSNR: 34.39 | LR: 0.00019026
+2025-07-31 15:47:50 -              Trainer: [    INFO] - Epoch [98/600] completed in 100.68s | Loss: 0.0117 | SSIM: 0.9655 | PSNR: 34.21 | LR: 0.00019003
+2025-07-31 15:48:41 -              Trainer: [    INFO] - Validating at iteration 33000...
+2025-07-31 15:48:51 -              Trainer: [    INFO] - Validation results | SSIM=0.9480, PSNR=33.38
+2025-07-31 15:49:40 -              Trainer: [    INFO] - Epoch [99/600] completed in 109.59s | Loss: 0.0118 | SSIM: 0.9655 | PSNR: 34.21 | LR: 0.00018980
+2025-07-31 15:51:20 -              Trainer: [    INFO] - Epoch [100/600] completed in 100.49s | Loss: 0.0117 | SSIM: 0.9658 | PSNR: 34.32 | LR: 0.00018957
+2025-07-31 15:51:20 -              Trainer: [    INFO] - Saved periodic model checkpoint to checkpoints_SRD/model_epoch_100_SRD.pth
+2025-07-31 15:53:01 -              Trainer: [    INFO] - Epoch [101/600] completed in 100.57s | Loss: 0.0116 | SSIM: 0.9658 | PSNR: 34.50 | LR: 0.00018934
+2025-07-31 15:53:51 -              Trainer: [    INFO] - Validating at iteration 34000...
+2025-07-31 15:54:00 -              Trainer: [    INFO] - Validation results | SSIM=0.9489, PSNR=33.50
+2025-07-31 15:54:00 -              Trainer: [    INFO] - saved new best model at iter 34000 with PSNR 33.50 to ./checkpoints_SRD/model_best_SRD.pth
+2025-07-31 15:54:51 -              Trainer: [    INFO] - Epoch [102/600] completed in 109.76s | Loss: 0.0116 | SSIM: 0.9661 | PSNR: 34.39 | LR: 0.00018910
+2025-07-31 15:56:31 -              Trainer: [    INFO] - Epoch [103/600] completed in 100.45s | Loss: 0.0116 | SSIM: 0.9659 | PSNR: 34.39 | LR: 0.00018886
+2025-07-31 15:58:12 -              Trainer: [    INFO] - Epoch [104/600] completed in 100.46s | Loss: 0.0115 | SSIM: 0.9661 | PSNR: 34.45 | LR: 0.00018862
+2025-07-31 15:59:00 -              Trainer: [    INFO] - Validating at iteration 35000...
+2025-07-31 15:59:09 -              Trainer: [    INFO] - Validation results | SSIM=0.9491, PSNR=33.44
+2025-07-31 16:00:01 -              Trainer: [    INFO] - Epoch [105/600] completed in 109.58s | Loss: 0.0116 | SSIM: 0.9660 | PSNR: 34.41 | LR: 0.00018838
+2025-07-31 16:01:42 -              Trainer: [    INFO] - Epoch [106/600] completed in 100.49s | Loss: 0.0116 | SSIM: 0.9659 | PSNR: 34.37 | LR: 0.00018813
+2025-07-31 16:03:22 -              Trainer: [    INFO] - Epoch [107/600] completed in 100.53s | Loss: 0.0114 | SSIM: 0.9661 | PSNR: 34.54 | LR: 0.00018788
+2025-07-31 16:04:09 -              Trainer: [    INFO] - Validating at iteration 36000...
+2025-07-31 16:04:18 -              Trainer: [    INFO] - Validation results | SSIM=0.9491, PSNR=33.49
+2025-07-31 16:05:12 -              Trainer: [    INFO] - Epoch [108/600] completed in 109.58s | Loss: 0.0115 | SSIM: 0.9661 | PSNR: 34.49 | LR: 0.00018763
+2025-07-31 16:06:52 -              Trainer: [    INFO] - Epoch [109/600] completed in 100.54s | Loss: 0.0113 | SSIM: 0.9666 | PSNR: 34.50 | LR: 0.00018738
+2025-07-31 16:08:33 -              Trainer: [    INFO] - Epoch [110/600] completed in 100.76s | Loss: 0.0114 | SSIM: 0.9663 | PSNR: 34.58 | LR: 0.00018712
+2025-07-31 16:09:18 -              Trainer: [    INFO] - Validating at iteration 37000...
+2025-07-31 16:09:27 -              Trainer: [    INFO] - Validation results | SSIM=0.9492, PSNR=33.42
+2025-07-31 16:10:23 -              Trainer: [    INFO] - Epoch [111/600] completed in 109.54s | Loss: 0.0114 | SSIM: 0.9663 | PSNR: 34.61 | LR: 0.00018686
+2025-07-31 16:12:03 -              Trainer: [    INFO] - Epoch [112/600] completed in 100.59s | Loss: 0.0113 | SSIM: 0.9665 | PSNR: 34.64 | LR: 0.00018660
+2025-07-31 16:13:44 -              Trainer: [    INFO] - Epoch [113/600] completed in 100.64s | Loss: 0.0113 | SSIM: 0.9666 | PSNR: 34.77 | LR: 0.00018634
+2025-07-31 16:14:28 -              Trainer: [    INFO] - Validating at iteration 38000...
+2025-07-31 16:14:37 -              Trainer: [    INFO] - Validation results | SSIM=0.9496, PSNR=33.54
+2025-07-31 16:14:38 -              Trainer: [    INFO] - saved new best model at iter 38000 with PSNR 33.54 to ./checkpoints_SRD/model_best_SRD.pth
+2025-07-31 16:15:34 -              Trainer: [    INFO] - Epoch [114/600] completed in 110.32s | Loss: 0.0114 | SSIM: 0.9666 | PSNR: 34.66 | LR: 0.00018607
+2025-07-31 16:17:15 -              Trainer: [    INFO] - Epoch [115/600] completed in 100.63s | Loss: 0.0113 | SSIM: 0.9665 | PSNR: 34.60 | LR: 0.00018581
+2025-07-31 16:18:55 -              Trainer: [    INFO] - Epoch [116/600] completed in 100.58s | Loss: 0.0113 | SSIM: 0.9667 | PSNR: 34.55 | LR: 0.00018554
+2025-07-31 16:19:38 -              Trainer: [    INFO] - Validating at iteration 39000...
+2025-07-31 16:19:47 -              Trainer: [    INFO] - Validation results | SSIM=0.9497, PSNR=33.36
+2025-07-31 16:20:45 -              Trainer: [    INFO] - Epoch [117/600] completed in 109.83s | Loss: 0.0112 | SSIM: 0.9670 | PSNR: 34.80 | LR: 0.00018526
+2025-07-31 16:22:26 -              Trainer: [    INFO] - Epoch [118/600] completed in 100.68s | Loss: 0.0112 | SSIM: 0.9667 | PSNR: 34.65 | LR: 0.00018499
+2025-07-31 16:24:06 -              Trainer: [    INFO] - Epoch [119/600] completed in 100.61s | Loss: 0.0113 | SSIM: 0.9666 | PSNR: 34.76 | LR: 0.00018471
+2025-07-31 16:24:47 -              Trainer: [    INFO] - Validating at iteration 40000...
+2025-07-31 16:24:57 -              Trainer: [    INFO] - Validation results | SSIM=0.9501, PSNR=33.84
+2025-07-31 16:24:57 -              Trainer: [    INFO] - saved new best model at iter 40000 with PSNR 33.84 to ./checkpoints_SRD/model_best_SRD.pth
+2025-07-31 16:25:57 -              Trainer: [    INFO] - Epoch [120/600] completed in 110.26s | Loss: 0.0114 | SSIM: 0.9667 | PSNR: 34.64 | LR: 0.00018443
+2025-07-31 16:27:37 -              Trainer: [    INFO] - Epoch [121/600] completed in 100.66s | Loss: 0.0110 | SSIM: 0.9670 | PSNR: 34.86 | LR: 0.00018415
+2025-07-31 16:29:18 -              Trainer: [    INFO] - Epoch [122/600] completed in 100.61s | Loss: 0.0111 | SSIM: 0.9668 | PSNR: 34.71 | LR: 0.00018387
+2025-07-31 16:29:57 -              Trainer: [    INFO] - Validating at iteration 41000...
+2025-07-31 16:30:06 -              Trainer: [    INFO] - Validation results | SSIM=0.9501, PSNR=33.54
+2025-07-31 16:31:07 -              Trainer: [    INFO] - Epoch [123/600] completed in 109.25s | Loss: 0.0112 | SSIM: 0.9670 | PSNR: 34.86 | LR: 0.00018358
+2025-07-31 16:32:48 -              Trainer: [    INFO] - Epoch [124/600] completed in 100.30s | Loss: 0.0110 | SSIM: 0.9672 | PSNR: 34.84 | LR: 0.00018329
+2025-07-31 16:34:28 -              Trainer: [    INFO] - Epoch [125/600] completed in 100.43s | Loss: 0.0109 | SSIM: 0.9673 | PSNR: 35.02 | LR: 0.00018300
+2025-07-31 16:35:06 -              Trainer: [    INFO] - Validating at iteration 42000...
+2025-07-31 16:35:15 -              Trainer: [    INFO] - Validation results | SSIM=0.9506, PSNR=33.87
+2025-07-31 16:35:15 -              Trainer: [    INFO] - saved new best model at iter 42000 with PSNR 33.87 to ./checkpoints_SRD/model_best_SRD.pth
+2025-07-31 16:36:18 -              Trainer: [    INFO] - Epoch [126/600] completed in 109.57s | Loss: 0.0109 | SSIM: 0.9673 | PSNR: 35.02 | LR: 0.00018271
+2025-07-31 16:37:58 -              Trainer: [    INFO] - Epoch [127/600] completed in 100.37s | Loss: 0.0111 | SSIM: 0.9670 | PSNR: 34.80 | LR: 0.00018241
+2025-07-31 16:39:38 -              Trainer: [    INFO] - Epoch [128/600] completed in 100.45s | Loss: 0.0111 | SSIM: 0.9672 | PSNR: 34.85 | LR: 0.00018211
+2025-07-31 16:40:15 -              Trainer: [    INFO] - Validating at iteration 43000...
+2025-07-31 16:40:24 -              Trainer: [    INFO] - Validation results | SSIM=0.9505, PSNR=33.69
+2025-07-31 16:41:28 -              Trainer: [    INFO] - Epoch [129/600] completed in 109.55s | Loss: 0.0109 | SSIM: 0.9672 | PSNR: 35.02 | LR: 0.00018181
+2025-07-31 16:43:08 -              Trainer: [    INFO] - Epoch [130/600] completed in 100.55s | Loss: 0.0110 | SSIM: 0.9673 | PSNR: 34.87 | LR: 0.00018151
+2025-07-31 16:44:49 -              Trainer: [    INFO] - Epoch [131/600] completed in 100.60s | Loss: 0.0110 | SSIM: 0.9674 | PSNR: 34.92 | LR: 0.00018121
+2025-07-31 16:45:24 -              Trainer: [    INFO] - Validating at iteration 44000...
+2025-07-31 16:45:33 -              Trainer: [    INFO] - Validation results | SSIM=0.9509, PSNR=33.85
+2025-07-31 16:46:39 -              Trainer: [    INFO] - Epoch [132/600] completed in 109.43s | Loss: 0.0109 | SSIM: 0.9674 | PSNR: 34.97 | LR: 0.00018090
+2025-07-31 16:48:19 -              Trainer: [    INFO] - Epoch [133/600] completed in 100.56s | Loss: 0.0109 | SSIM: 0.9675 | PSNR: 34.98 | LR: 0.00018059
+2025-07-31 16:50:00 -              Trainer: [    INFO] - Epoch [134/600] completed in 100.60s | Loss: 0.0109 | SSIM: 0.9676 | PSNR: 35.00 | LR: 0.00018028
+2025-07-31 16:50:33 -              Trainer: [    INFO] - Validating at iteration 45000...
+2025-07-31 16:50:42 -              Trainer: [    INFO] - Validation results | SSIM=0.9504, PSNR=33.60
+2025-07-31 16:51:49 -              Trainer: [    INFO] - Epoch [135/600] completed in 109.57s | Loss: 0.0108 | SSIM: 0.9676 | PSNR: 35.02 | LR: 0.00017997
+2025-07-31 16:53:30 -              Trainer: [    INFO] - Epoch [136/600] completed in 100.41s | Loss: 0.0108 | SSIM: 0.9674 | PSNR: 35.05 | LR: 0.00017965
+2025-07-31 16:55:10 -              Trainer: [    INFO] - Epoch [137/600] completed in 100.45s | Loss: 0.0109 | SSIM: 0.9676 | PSNR: 35.02 | LR: 0.00017934
+2025-07-31 16:55:42 -              Trainer: [    INFO] - Validating at iteration 46000...
+2025-07-31 16:55:51 -              Trainer: [    INFO] - Validation results | SSIM=0.9510, PSNR=33.85
+2025-07-31 16:57:00 -              Trainer: [    INFO] - Epoch [138/600] completed in 109.57s | Loss: 0.0109 | SSIM: 0.9674 | PSNR: 35.03 | LR: 0.00017902
+2025-07-31 16:58:40 -              Trainer: [    INFO] - Epoch [139/600] completed in 100.47s | Loss: 0.0107 | SSIM: 0.9677 | PSNR: 34.99 | LR: 0.00017869
+2025-07-31 17:00:21 -              Trainer: [    INFO] - Epoch [140/600] completed in 100.47s | Loss: 0.0106 | SSIM: 0.9680 | PSNR: 35.15 | LR: 0.00017837
+2025-07-31 17:00:51 -              Trainer: [    INFO] - Validating at iteration 47000...
+2025-07-31 17:01:00 -              Trainer: [    INFO] - Validation results | SSIM=0.9515, PSNR=34.12
+2025-07-31 17:01:00 -              Trainer: [    INFO] - saved new best model at iter 47000 with PSNR 34.12 to ./checkpoints_SRD/model_best_SRD.pth
+2025-07-31 17:02:10 -              Trainer: [    INFO] - Epoch [141/600] completed in 109.59s | Loss: 0.0107 | SSIM: 0.9681 | PSNR: 35.22 | LR: 0.00017804
+2025-07-31 17:03:51 -              Trainer: [    INFO] - Epoch [142/600] completed in 100.49s | Loss: 0.0106 | SSIM: 0.9680 | PSNR: 35.24 | LR: 0.00017771
+2025-07-31 17:05:31 -              Trainer: [    INFO] - Epoch [143/600] completed in 100.59s | Loss: 0.0107 | SSIM: 0.9680 | PSNR: 35.08 | LR: 0.00017738
+2025-07-31 17:06:00 -              Trainer: [    INFO] - Validating at iteration 48000...
+2025-07-31 17:06:09 -              Trainer: [    INFO] - Validation results | SSIM=0.9510, PSNR=33.86
+2025-07-31 17:07:21 -              Trainer: [    INFO] - Epoch [144/600] completed in 109.51s | Loss: 0.0106 | SSIM: 0.9680 | PSNR: 35.23 | LR: 0.00017705
+2025-07-31 17:09:01 -              Trainer: [    INFO] - Epoch [145/600] completed in 100.66s | Loss: 0.0106 | SSIM: 0.9682 | PSNR: 35.22 | LR: 0.00017672
+2025-07-31 17:10:42 -              Trainer: [    INFO] - Epoch [146/600] completed in 100.54s | Loss: 0.0106 | SSIM: 0.9682 | PSNR: 35.31 | LR: 0.00017638
+2025-07-31 17:11:09 -              Trainer: [    INFO] - Validating at iteration 49000...
+2025-07-31 17:11:19 -              Trainer: [    INFO] - Validation results | SSIM=0.9513, PSNR=34.13
+2025-07-31 17:11:19 -              Trainer: [    INFO] - saved new best model at iter 49000 with PSNR 34.13 to ./checkpoints_SRD/model_best_SRD.pth
+2025-07-31 17:12:32 -              Trainer: [    INFO] - Epoch [147/600] completed in 109.84s | Loss: 0.0105 | SSIM: 0.9683 | PSNR: 35.37 | LR: 0.00017604
+2025-07-31 17:14:13 -              Trainer: [    INFO] - Epoch [148/600] completed in 100.66s | Loss: 0.0106 | SSIM: 0.9682 | PSNR: 35.23 | LR: 0.00017570
+2025-07-31 17:15:53 -              Trainer: [    INFO] - Epoch [149/600] completed in 100.45s | Loss: 0.0106 | SSIM: 0.9682 | PSNR: 35.28 | LR: 0.00017536
+2025-07-31 17:16:19 -              Trainer: [    INFO] - Validating at iteration 50000...
+2025-07-31 17:16:28 -              Trainer: [    INFO] - Validation results | SSIM=0.9521, PSNR=34.17
+2025-07-31 17:16:28 -              Trainer: [    INFO] - saved new best model at iter 50000 with PSNR 34.17 to ./checkpoints_SRD/model_best_SRD.pth
+2025-07-31 17:17:43 -              Trainer: [    INFO] - Epoch [150/600] completed in 109.82s | Loss: 0.0105 | SSIM: 0.9684 | PSNR: 35.35 | LR: 0.00017501
+2025-07-31 17:17:43 -              Trainer: [    INFO] - Saved periodic model checkpoint to checkpoints_SRD/model_epoch_150_SRD.pth
+2025-07-31 17:19:23 -              Trainer: [    INFO] - Epoch [151/600] completed in 100.47s | Loss: 0.0105 | SSIM: 0.9683 | PSNR: 35.31 | LR: 0.00017466
+2025-07-31 17:21:04 -              Trainer: [    INFO] - Epoch [152/600] completed in 100.54s | Loss: 0.0103 | SSIM: 0.9687 | PSNR: 35.45 | LR: 0.00017431
+2025-07-31 17:21:28 -              Trainer: [    INFO] - Validating at iteration 51000...
+2025-07-31 17:21:38 -              Trainer: [    INFO] - Validation results | SSIM=0.9516, PSNR=33.87
+2025-07-31 17:22:54 -              Trainer: [    INFO] - Epoch [153/600] completed in 110.08s | Loss: 0.0106 | SSIM: 0.9683 | PSNR: 35.26 | LR: 0.00017396
+2025-07-31 17:24:35 -              Trainer: [    INFO] - Epoch [154/600] completed in 100.61s | Loss: 0.0114 | SSIM: 0.9657 | PSNR: 34.68 | LR: 0.00017361
+2025-07-31 17:26:15 -              Trainer: [    INFO] - Epoch [155/600] completed in 100.57s | Loss: 0.0105 | SSIM: 0.9684 | PSNR: 35.36 | LR: 0.00017325
+2025-07-31 17:26:38 -              Trainer: [    INFO] - Validating at iteration 52000...
+2025-07-31 17:26:48 -              Trainer: [    INFO] - Validation results | SSIM=0.9519, PSNR=34.06
+2025-07-31 17:28:05 -              Trainer: [    INFO] - Epoch [156/600] completed in 110.13s | Loss: 0.0104 | SSIM: 0.9685 | PSNR: 35.44 | LR: 0.00017290
+2025-07-31 17:29:46 -              Trainer: [    INFO] - Epoch [157/600] completed in 100.59s | Loss: 0.0104 | SSIM: 0.9686 | PSNR: 35.45 | LR: 0.00017254
+2025-07-31 17:31:27 -              Trainer: [    INFO] - Epoch [158/600] completed in 100.71s | Loss: 0.0103 | SSIM: 0.9688 | PSNR: 35.55 | LR: 0.00017218
+2025-07-31 17:31:48 -              Trainer: [    INFO] - Validating at iteration 53000...
+2025-07-31 17:31:58 -              Trainer: [    INFO] - Validation results | SSIM=0.9523, PSNR=34.18
+2025-07-31 17:31:58 -              Trainer: [    INFO] - saved new best model at iter 53000 with PSNR 34.18 to ./checkpoints_SRD/model_best_SRD.pth
+2025-07-31 17:33:17 -              Trainer: [    INFO] - Epoch [159/600] completed in 110.42s | Loss: 0.0103 | SSIM: 0.9688 | PSNR: 35.57 | LR: 0.00017181
+2025-07-31 17:34:58 -              Trainer: [    INFO] - Epoch [160/600] completed in 100.60s | Loss: 0.0102 | SSIM: 0.9690 | PSNR: 35.56 | LR: 0.00017145
+2025-07-31 17:36:38 -              Trainer: [    INFO] - Epoch [161/600] completed in 100.60s | Loss: 0.0103 | SSIM: 0.9690 | PSNR: 35.54 | LR: 0.00017108
+2025-07-31 17:36:58 -              Trainer: [    INFO] - Validating at iteration 54000...
+2025-07-31 17:37:08 -              Trainer: [    INFO] - Validation results | SSIM=0.9526, PSNR=34.22
+2025-07-31 17:37:08 -              Trainer: [    INFO] - saved new best model at iter 54000 with PSNR 34.22 to ./checkpoints_SRD/model_best_SRD.pth
+2025-07-31 17:38:28 -              Trainer: [    INFO] - Epoch [162/600] completed in 109.99s | Loss: 0.0104 | SSIM: 0.9685 | PSNR: 35.40 | LR: 0.00017071
+2025-07-31 17:40:09 -              Trainer: [    INFO] - Epoch [163/600] completed in 100.47s | Loss: 0.0103 | SSIM: 0.9688 | PSNR: 35.50 | LR: 0.00017034
+2025-07-31 17:41:50 -              Trainer: [    INFO] - Epoch [164/600] completed in 100.82s | Loss: 0.0102 | SSIM: 0.9692 | PSNR: 35.55 | LR: 0.00016997
+2025-07-31 17:42:08 -              Trainer: [    INFO] - Validating at iteration 55000...
+2025-07-31 17:42:17 -              Trainer: [    INFO] - Validation results | SSIM=0.9522, PSNR=34.26
+2025-07-31 17:42:17 -              Trainer: [    INFO] - saved new best model at iter 55000 with PSNR 34.26 to ./checkpoints_SRD/model_best_SRD.pth
+2025-07-31 17:43:39 -              Trainer: [    INFO] - Epoch [165/600] completed in 109.73s | Loss: 0.0103 | SSIM: 0.9688 | PSNR: 35.50 | LR: 0.00016959
+2025-07-31 17:45:20 -              Trainer: [    INFO] - Epoch [166/600] completed in 100.45s | Loss: 0.0103 | SSIM: 0.9689 | PSNR: 35.46 | LR: 0.00016921
+2025-07-31 17:47:00 -              Trainer: [    INFO] - Epoch [167/600] completed in 100.63s | Loss: 0.0103 | SSIM: 0.9689 | PSNR: 35.53 | LR: 0.00016884
+2025-07-31 17:47:17 -              Trainer: [    INFO] - Validating at iteration 56000...
+2025-07-31 17:47:27 -              Trainer: [    INFO] - Validation results | SSIM=0.9527, PSNR=34.19
+2025-07-31 17:48:50 -              Trainer: [    INFO] - Epoch [168/600] completed in 109.44s | Loss: 0.0103 | SSIM: 0.9689 | PSNR: 35.38 | LR: 0.00016845
+2025-07-31 17:50:30 -              Trainer: [    INFO] - Epoch [169/600] completed in 100.55s | Loss: 0.0103 | SSIM: 0.9690 | PSNR: 35.57 | LR: 0.00016807
+2025-07-31 17:52:11 -              Trainer: [    INFO] - Epoch [170/600] completed in 100.47s | Loss: 0.0101 | SSIM: 0.9691 | PSNR: 35.64 | LR: 0.00016769
+2025-07-31 17:52:26 -              Trainer: [    INFO] - Validating at iteration 57000...
+2025-07-31 17:52:35 -              Trainer: [    INFO] - Validation results | SSIM=0.9533, PSNR=34.23
+2025-07-31 17:54:00 -              Trainer: [    INFO] - Epoch [171/600] completed in 109.42s | Loss: 0.0101 | SSIM: 0.9692 | PSNR: 35.64 | LR: 0.00016730
+2025-07-31 17:55:41 -              Trainer: [    INFO] - Epoch [172/600] completed in 100.56s | Loss: 0.0101 | SSIM: 0.9692 | PSNR: 35.63 | LR: 0.00016691
+2025-07-31 17:57:21 -              Trainer: [    INFO] - Epoch [173/600] completed in 100.61s | Loss: 0.0101 | SSIM: 0.9693 | PSNR: 35.66 | LR: 0.00016652
+2025-07-31 17:57:35 -              Trainer: [    INFO] - Validating at iteration 58000...
+2025-07-31 17:57:45 -              Trainer: [    INFO] - Validation results | SSIM=0.9526, PSNR=34.17
+2025-07-31 17:59:11 -              Trainer: [    INFO] - Epoch [174/600] completed in 109.54s | Loss: 0.0102 | SSIM: 0.9693 | PSNR: 35.66 | LR: 0.00016613
+2025-07-31 18:00:51 -              Trainer: [    INFO] - Epoch [175/600] completed in 100.43s | Loss: 0.0102 | SSIM: 0.9691 | PSNR: 35.63 | LR: 0.00016574
+2025-07-31 18:02:32 -              Trainer: [    INFO] - Epoch [176/600] completed in 100.59s | Loss: 0.0101 | SSIM: 0.9693 | PSNR: 35.66 | LR: 0.00016534
+2025-07-31 18:02:44 -              Trainer: [    INFO] - Validating at iteration 59000...
+2025-07-31 18:02:54 -              Trainer: [    INFO] - Validation results | SSIM=0.9529, PSNR=34.16
+2025-07-31 18:04:21 -              Trainer: [    INFO] - Epoch [177/600] completed in 109.38s | Loss: 0.0101 | SSIM: 0.9694 | PSNR: 35.66 | LR: 0.00016494
+2025-07-31 18:06:02 -              Trainer: [    INFO] - Epoch [178/600] completed in 100.40s | Loss: 0.0100 | SSIM: 0.9694 | PSNR: 35.76 | LR: 0.00016455
+2025-07-31 18:07:42 -              Trainer: [    INFO] - Epoch [179/600] completed in 100.38s | Loss: 0.0101 | SSIM: 0.9693 | PSNR: 35.72 | LR: 0.00016414
+2025-07-31 18:07:53 -              Trainer: [    INFO] - Validating at iteration 60000...
+2025-07-31 18:08:03 -              Trainer: [    INFO] - Validation results | SSIM=0.9529, PSNR=34.16
+2025-07-31 18:09:32 -              Trainer: [    INFO] - Epoch [180/600] completed in 109.58s | Loss: 0.0101 | SSIM: 0.9693 | PSNR: 35.67 | LR: 0.00016374
+2025-07-31 18:11:12 -              Trainer: [    INFO] - Epoch [181/600] completed in 100.47s | Loss: 0.0100 | SSIM: 0.9696 | PSNR: 35.67 | LR: 0.00016334
+2025-07-31 18:12:53 -              Trainer: [    INFO] - Epoch [182/600] completed in 100.36s | Loss: 0.0100 | SSIM: 0.9694 | PSNR: 35.73 | LR: 0.00016293
+2025-07-31 18:13:02 -              Trainer: [    INFO] - Validating at iteration 61000...
+2025-07-31 18:13:11 -              Trainer: [    INFO] - Validation results | SSIM=0.9531, PSNR=34.29
+2025-07-31 18:13:12 -              Trainer: [    INFO] - saved new best model at iter 61000 with PSNR 34.29 to ./checkpoints_SRD/model_best_SRD.pth
+2025-07-31 18:14:42 -              Trainer: [    INFO] - Epoch [183/600] completed in 109.73s | Loss: 0.0100 | SSIM: 0.9696 | PSNR: 35.81 | LR: 0.00016252
+2025-07-31 18:16:23 -              Trainer: [    INFO] - Epoch [184/600] completed in 100.43s | Loss: 0.0100 | SSIM: 0.9695 | PSNR: 35.76 | LR: 0.00016211
+2025-07-31 18:18:03 -              Trainer: [    INFO] - Epoch [185/600] completed in 100.51s | Loss: 0.0099 | SSIM: 0.9697 | PSNR: 35.81 | LR: 0.00016170
+2025-07-31 18:18:11 -              Trainer: [    INFO] - Validating at iteration 62000...
+2025-07-31 18:18:21 -              Trainer: [    INFO] - Validation results | SSIM=0.9530, PSNR=34.23
+2025-07-31 18:19:53 -              Trainer: [    INFO] - Epoch [186/600] completed in 109.62s | Loss: 0.0100 | SSIM: 0.9697 | PSNR: 35.78 | LR: 0.00016129
+2025-07-31 18:21:33 -              Trainer: [    INFO] - Epoch [187/600] completed in 100.46s | Loss: 0.0099 | SSIM: 0.9699 | PSNR: 35.91 | LR: 0.00016088
+2025-07-31 18:23:14 -              Trainer: [    INFO] - Epoch [188/600] completed in 100.44s | Loss: 0.0098 | SSIM: 0.9698 | PSNR: 35.93 | LR: 0.00016046
+2025-07-31 18:23:20 -              Trainer: [    INFO] - Validating at iteration 63000...
+2025-07-31 18:23:29 -              Trainer: [    INFO] - Validation results | SSIM=0.9533, PSNR=34.41
+2025-07-31 18:23:30 -              Trainer: [    INFO] - saved new best model at iter 63000 with PSNR 34.41 to ./checkpoints_SRD/model_best_SRD.pth
+2025-07-31 18:25:03 -              Trainer: [    INFO] - Epoch [189/600] completed in 109.68s | Loss: 0.0100 | SSIM: 0.9697 | PSNR: 35.85 | LR: 0.00016004
+2025-07-31 18:26:44 -              Trainer: [    INFO] - Epoch [190/600] completed in 100.62s | Loss: 0.0099 | SSIM: 0.9697 | PSNR: 35.78 | LR: 0.00015962
+2025-07-31 18:28:25 -              Trainer: [    INFO] - Epoch [191/600] completed in 100.53s | Loss: 0.0099 | SSIM: 0.9698 | PSNR: 35.82 | LR: 0.00015920
+2025-07-31 18:28:30 -              Trainer: [    INFO] - Validating at iteration 64000...
+2025-07-31 18:28:39 -              Trainer: [    INFO] - Validation results | SSIM=0.9537, PSNR=34.43
+2025-07-31 18:28:39 -              Trainer: [    INFO] - saved new best model at iter 64000 with PSNR 34.43 to ./checkpoints_SRD/model_best_SRD.pth
+2025-07-31 18:30:14 -              Trainer: [    INFO] - Epoch [192/600] completed in 109.67s | Loss: 0.0099 | SSIM: 0.9699 | PSNR: 35.86 | LR: 0.00015878
+2025-07-31 18:31:55 -              Trainer: [    INFO] - Epoch [193/600] completed in 100.64s | Loss: 0.0100 | SSIM: 0.9696 | PSNR: 35.72 | LR: 0.00015835
+2025-07-31 18:33:35 -              Trainer: [    INFO] - Epoch [194/600] completed in 100.53s | Loss: 0.0098 | SSIM: 0.9698 | PSNR: 35.91 | LR: 0.00015793
+2025-07-31 18:33:39 -              Trainer: [    INFO] - Validating at iteration 65000...
+2025-07-31 18:33:48 -              Trainer: [    INFO] - Validation results | SSIM=0.9539, PSNR=34.30
+2025-07-31 18:35:25 -              Trainer: [    INFO] - Epoch [195/600] completed in 109.69s | Loss: 0.0100 | SSIM: 0.9696 | PSNR: 35.80 | LR: 0.00015750
+2025-07-31 18:37:06 -              Trainer: [    INFO] - Epoch [196/600] completed in 100.71s | Loss: 0.0098 | SSIM: 0.9699 | PSNR: 35.97 | LR: 0.00015707
+2025-07-31 18:38:47 -              Trainer: [    INFO] - Epoch [197/600] completed in 100.68s | Loss: 0.0098 | SSIM: 0.9700 | PSNR: 35.90 | LR: 0.00015664
+2025-07-31 18:38:49 -              Trainer: [    INFO] - Validating at iteration 66000...
+2025-07-31 18:38:58 -              Trainer: [    INFO] - Validation results | SSIM=0.9537, PSNR=34.40
+2025-07-31 18:40:37 -              Trainer: [    INFO] - Epoch [198/600] completed in 110.23s | Loss: 0.0098 | SSIM: 0.9700 | PSNR: 35.97 | LR: 0.00015621
+2025-07-31 18:42:17 -              Trainer: [    INFO] - Epoch [199/600] completed in 100.55s | Loss: 0.0098 | SSIM: 0.9698 | PSNR: 35.87 | LR: 0.00015577
+2025-07-31 18:43:58 -              Trainer: [    INFO] - Validating at iteration 67000...
+2025-07-31 18:44:07 -              Trainer: [    INFO] - Validation results | SSIM=0.9534, PSNR=34.32
+2025-07-31 18:44:07 -              Trainer: [    INFO] - Epoch [200/600] completed in 109.80s | Loss: 0.0097 | SSIM: 0.9702 | PSNR: 36.03 | LR: 0.00015534
+2025-07-31 18:44:07 -              Trainer: [    INFO] - Saved periodic model checkpoint to checkpoints_SRD/model_epoch_200_SRD.pth
+2025-07-31 18:45:48 -              Trainer: [    INFO] - Epoch [201/600] completed in 100.51s | Loss: 0.0096 | SSIM: 0.9703 | PSNR: 36.06 | LR: 0.00015490
+2025-07-31 18:47:28 -              Trainer: [    INFO] - Epoch [202/600] completed in 100.63s | Loss: 0.0097 | SSIM: 0.9700 | PSNR: 36.03 | LR: 0.00015446
+2025-07-31 18:49:08 -              Trainer: [    INFO] - Validating at iteration 68000...
+2025-07-31 18:49:17 -              Trainer: [    INFO] - Validation results | SSIM=0.9537, PSNR=34.46
+2025-07-31 18:49:17 -              Trainer: [    INFO] - saved new best model at iter 68000 with PSNR 34.46 to ./checkpoints_SRD/model_best_SRD.pth
+2025-07-31 18:49:19 -              Trainer: [    INFO] - Epoch [203/600] completed in 110.22s | Loss: 0.0098 | SSIM: 0.9700 | PSNR: 36.00 | LR: 0.00015402
+2025-07-31 18:50:59 -              Trainer: [    INFO] - Epoch [204/600] completed in 100.47s | Loss: 0.0097 | SSIM: 0.9702 | PSNR: 35.98 | LR: 0.00015358
+2025-07-31 18:52:40 -              Trainer: [    INFO] - Epoch [205/600] completed in 100.48s | Loss: 0.0097 | SSIM: 0.9701 | PSNR: 36.00 | LR: 0.00015314
+2025-07-31 18:54:17 -              Trainer: [    INFO] - Validating at iteration 69000...
+2025-07-31 18:54:26 -              Trainer: [    INFO] - Validation results | SSIM=0.9539, PSNR=34.55
+2025-07-31 18:54:27 -              Trainer: [    INFO] - saved new best model at iter 69000 with PSNR 34.55 to ./checkpoints_SRD/model_best_SRD.pth
+2025-07-31 18:54:30 -              Trainer: [    INFO] - Epoch [206/600] completed in 109.93s | Loss: 0.0097 | SSIM: 0.9702 | PSNR: 36.07 | LR: 0.00015270
+2025-07-31 18:56:10 -              Trainer: [    INFO] - Epoch [207/600] completed in 100.57s | Loss: 0.0096 | SSIM: 0.9703 | PSNR: 36.04 | LR: 0.00015225
+2025-07-31 18:57:51 -              Trainer: [    INFO] - Epoch [208/600] completed in 100.53s | Loss: 0.0096 | SSIM: 0.9702 | PSNR: 36.04 | LR: 0.00015180
+2025-07-31 18:59:27 -              Trainer: [    INFO] - Validating at iteration 70000...
+2025-07-31 18:59:36 -              Trainer: [    INFO] - Validation results | SSIM=0.9543, PSNR=34.51
+2025-07-31 18:59:41 -              Trainer: [    INFO] - Epoch [209/600] completed in 109.90s | Loss: 0.0096 | SSIM: 0.9704 | PSNR: 36.11 | LR: 0.00015135
+2025-07-31 19:01:21 -              Trainer: [    INFO] - Epoch [210/600] completed in 100.51s | Loss: 0.0096 | SSIM: 0.9705 | PSNR: 36.14 | LR: 0.00015090
+2025-07-31 19:03:02 -              Trainer: [    INFO] - Epoch [211/600] completed in 100.57s | Loss: 0.0097 | SSIM: 0.9704 | PSNR: 36.10 | LR: 0.00015045
+2025-07-31 19:04:36 -              Trainer: [    INFO] - Validating at iteration 71000...
+2025-07-31 19:04:45 -              Trainer: [    INFO] - Validation results | SSIM=0.9536, PSNR=33.96
+2025-07-31 19:04:51 -              Trainer: [    INFO] - Epoch [212/600] completed in 109.84s | Loss: 0.0096 | SSIM: 0.9704 | PSNR: 36.12 | LR: 0.00015000
+2025-07-31 19:06:32 -              Trainer: [    INFO] - Epoch [213/600] completed in 100.44s | Loss: 0.0096 | SSIM: 0.9704 | PSNR: 36.10 | LR: 0.00014955
+2025-07-31 19:08:12 -              Trainer: [    INFO] - Epoch [214/600] completed in 100.50s | Loss: 0.0095 | SSIM: 0.9706 | PSNR: 36.20 | LR: 0.00014909
+2025-07-31 19:09:45 -              Trainer: [    INFO] - Validating at iteration 72000...
+2025-07-31 19:09:55 -              Trainer: [    INFO] - Validation results | SSIM=0.9543, PSNR=34.60
+2025-07-31 19:09:55 -              Trainer: [    INFO] - saved new best model at iter 72000 with PSNR 34.60 to ./checkpoints_SRD/model_best_SRD.pth
+2025-07-31 19:10:02 -              Trainer: [    INFO] - Epoch [215/600] completed in 110.06s | Loss: 0.0096 | SSIM: 0.9706 | PSNR: 36.15 | LR: 0.00014863
+2025-07-31 19:11:43 -              Trainer: [    INFO] - Epoch [216/600] completed in 100.47s | Loss: 0.0095 | SSIM: 0.9706 | PSNR: 36.23 | LR: 0.00014818
+2025-07-31 19:13:23 -              Trainer: [    INFO] - Epoch [217/600] completed in 100.53s | Loss: 0.0096 | SSIM: 0.9704 | PSNR: 36.01 | LR: 0.00014772
+2025-07-31 19:14:55 -              Trainer: [    INFO] - Validating at iteration 73000...
+2025-07-31 19:15:04 -              Trainer: [    INFO] - Validation results | SSIM=0.9544, PSNR=34.44
+2025-07-31 19:15:13 -              Trainer: [    INFO] - Epoch [218/600] completed in 109.92s | Loss: 0.0095 | SSIM: 0.9707 | PSNR: 36.21 | LR: 0.00014726
+2025-07-31 19:16:54 -              Trainer: [    INFO] - Epoch [219/600] completed in 100.63s | Loss: 0.0096 | SSIM: 0.9705 | PSNR: 36.16 | LR: 0.00014679
+2025-07-31 19:18:34 -              Trainer: [    INFO] - Epoch [220/600] completed in 100.41s | Loss: 0.0095 | SSIM: 0.9707 | PSNR: 36.20 | LR: 0.00014633
+2025-07-31 19:20:04 -              Trainer: [    INFO] - Validating at iteration 74000...
+2025-07-31 19:20:14 -              Trainer: [    INFO] - Validation results | SSIM=0.9545, PSNR=34.60
+2025-07-31 19:20:14 -              Trainer: [    INFO] - saved new best model at iter 74000 with PSNR 34.60 to ./checkpoints_SRD/model_best_SRD.pth
+2025-07-31 19:20:24 -              Trainer: [    INFO] - Epoch [221/600] completed in 109.93s | Loss: 0.0095 | SSIM: 0.9707 | PSNR: 36.19 | LR: 0.00014586
+2025-07-31 19:22:05 -              Trainer: [    INFO] - Epoch [222/600] completed in 100.33s | Loss: 0.0094 | SSIM: 0.9708 | PSNR: 36.27 | LR: 0.00014540
+2025-07-31 19:23:45 -              Trainer: [    INFO] - Epoch [223/600] completed in 100.51s | Loss: 0.0094 | SSIM: 0.9708 | PSNR: 36.27 | LR: 0.00014493
+2025-07-31 19:25:14 -              Trainer: [    INFO] - Validating at iteration 75000...
+2025-07-31 19:25:23 -              Trainer: [    INFO] - Validation results | SSIM=0.9545, PSNR=34.73
+2025-07-31 19:25:23 -              Trainer: [    INFO] - saved new best model at iter 75000 with PSNR 34.73 to ./checkpoints_SRD/model_best_SRD.pth
+2025-07-31 19:25:35 -              Trainer: [    INFO] - Epoch [224/600] completed in 109.64s | Loss: 0.0094 | SSIM: 0.9709 | PSNR: 36.31 | LR: 0.00014446
+2025-07-31 19:27:15 -              Trainer: [    INFO] - Epoch [225/600] completed in 100.45s | Loss: 0.0094 | SSIM: 0.9708 | PSNR: 36.28 | LR: 0.00014399
+2025-07-31 19:28:56 -              Trainer: [    INFO] - Epoch [226/600] completed in 100.45s | Loss: 0.0095 | SSIM: 0.9706 | PSNR: 36.26 | LR: 0.00014352
+2025-07-31 19:30:23 -              Trainer: [    INFO] - Validating at iteration 76000...
+2025-07-31 19:30:32 -              Trainer: [    INFO] - Validation results | SSIM=0.9546, PSNR=34.65
+2025-07-31 19:30:46 -              Trainer: [    INFO] - Epoch [227/600] completed in 110.09s | Loss: 0.0094 | SSIM: 0.9709 | PSNR: 36.28 | LR: 0.00014305
+2025-07-31 19:32:27 -              Trainer: [    INFO] - Epoch [228/600] completed in 100.79s | Loss: 0.0095 | SSIM: 0.9708 | PSNR: 36.23 | LR: 0.00014258
+2025-07-31 19:34:07 -              Trainer: [    INFO] - Epoch [229/600] completed in 100.61s | Loss: 0.0094 | SSIM: 0.9710 | PSNR: 36.35 | LR: 0.00014210
+2025-07-31 19:35:33 -              Trainer: [    INFO] - Validating at iteration 77000...
+2025-07-31 19:35:42 -              Trainer: [    INFO] - Validation results | SSIM=0.9552, PSNR=34.78
+2025-07-31 19:35:42 -              Trainer: [    INFO] - saved new best model at iter 77000 with PSNR 34.78 to ./checkpoints_SRD/model_best_SRD.pth
+2025-07-31 19:35:57 -              Trainer: [    INFO] - Epoch [230/600] completed in 110.05s | Loss: 0.0094 | SSIM: 0.9709 | PSNR: 36.30 | LR: 0.00014163
+2025-07-31 19:37:38 -              Trainer: [    INFO] - Epoch [231/600] completed in 100.71s | Loss: 0.0093 | SSIM: 0.9711 | PSNR: 36.44 | LR: 0.00014115
+2025-07-31 19:39:19 -              Trainer: [    INFO] - Epoch [232/600] completed in 100.69s | Loss: 0.0094 | SSIM: 0.9710 | PSNR: 36.38 | LR: 0.00014067
+2025-07-31 19:40:43 -              Trainer: [    INFO] - Validating at iteration 78000...
+2025-07-31 19:40:52 -              Trainer: [    INFO] - Validation results | SSIM=0.9551, PSNR=34.74
+2025-07-31 19:41:09 -              Trainer: [    INFO] - Epoch [233/600] completed in 109.88s | Loss: 0.0094 | SSIM: 0.9710 | PSNR: 36.35 | LR: 0.00014019
+2025-07-31 19:42:49 -              Trainer: [    INFO] - Epoch [234/600] completed in 100.52s | Loss: 0.0093 | SSIM: 0.9710 | PSNR: 36.36 | LR: 0.00013971
+2025-07-31 19:44:30 -              Trainer: [    INFO] - Epoch [235/600] completed in 100.44s | Loss: 0.0093 | SSIM: 0.9710 | PSNR: 36.40 | LR: 0.00013923
+2025-07-31 19:45:52 -              Trainer: [    INFO] - Validating at iteration 79000...
+2025-07-31 19:46:02 -              Trainer: [    INFO] - Validation results | SSIM=0.9552, PSNR=34.72
+2025-07-31 19:46:20 -              Trainer: [    INFO] - Epoch [236/600] completed in 110.32s | Loss: 0.0093 | SSIM: 0.9711 | PSNR: 36.41 | LR: 0.00013875
+2025-07-31 19:48:00 -              Trainer: [    INFO] - Epoch [237/600] completed in 100.46s | Loss: 0.0093 | SSIM: 0.9712 | PSNR: 36.37 | LR: 0.00013827
+2025-07-31 19:49:41 -              Trainer: [    INFO] - Epoch [238/600] completed in 100.58s | Loss: 0.0093 | SSIM: 0.9711 | PSNR: 36.37 | LR: 0.00013778
+2025-07-31 19:51:02 -              Trainer: [    INFO] - Validating at iteration 80000...
+2025-07-31 19:51:11 -              Trainer: [    INFO] - Validation results | SSIM=0.9552, PSNR=34.72
+2025-07-31 19:51:31 -              Trainer: [    INFO] - Epoch [239/600] completed in 109.82s | Loss: 0.0093 | SSIM: 0.9713 | PSNR: 36.42 | LR: 0.00013730
+2025-07-31 19:53:11 -              Trainer: [    INFO] - Epoch [240/600] completed in 100.67s | Loss: 0.0093 | SSIM: 0.9711 | PSNR: 36.38 | LR: 0.00013681
+2025-07-31 19:54:52 -              Trainer: [    INFO] - Epoch [241/600] completed in 100.67s | Loss: 0.0093 | SSIM: 0.9713 | PSNR: 36.45 | LR: 0.00013633
+2025-07-31 19:56:12 -              Trainer: [    INFO] - Validating at iteration 81000...
+2025-07-31 19:56:21 -              Trainer: [    INFO] - Validation results | SSIM=0.9553, PSNR=34.78
+2025-07-31 19:56:21 -              Trainer: [    INFO] - saved new best model at iter 81000 with PSNR 34.78 to ./checkpoints_SRD/model_best_SRD.pth
+2025-07-31 19:56:42 -              Trainer: [    INFO] - Epoch [242/600] completed in 109.98s | Loss: 0.0093 | SSIM: 0.9712 | PSNR: 36.41 | LR: 0.00013584
+2025-07-31 19:58:23 -              Trainer: [    INFO] - Epoch [243/600] completed in 100.54s | Loss: 0.0093 | SSIM: 0.9712 | PSNR: 36.42 | LR: 0.00013535
+2025-07-31 20:00:03 -              Trainer: [    INFO] - Epoch [244/600] completed in 100.55s | Loss: 0.0093 | SSIM: 0.9713 | PSNR: 36.45 | LR: 0.00013486
+2025-07-31 20:01:21 -              Trainer: [    INFO] - Validating at iteration 82000...
+2025-07-31 20:01:31 -              Trainer: [    INFO] - Validation results | SSIM=0.9556, PSNR=34.82
+2025-07-31 20:01:31 -              Trainer: [    INFO] - saved new best model at iter 82000 with PSNR 34.82 to ./checkpoints_SRD/model_best_SRD.pth
+2025-07-31 20:01:53 -              Trainer: [    INFO] - Epoch [245/600] completed in 110.03s | Loss: 0.0092 | SSIM: 0.9713 | PSNR: 36.42 | LR: 0.00013437
+2025-07-31 20:03:34 -              Trainer: [    INFO] - Epoch [246/600] completed in 100.51s | Loss: 0.0092 | SSIM: 0.9711 | PSNR: 36.46 | LR: 0.00013387
+2025-07-31 20:05:14 -              Trainer: [    INFO] - Epoch [247/600] completed in 100.43s | Loss: 0.0092 | SSIM: 0.9714 | PSNR: 36.54 | LR: 0.00013338
+2025-07-31 20:06:31 -              Trainer: [    INFO] - Validating at iteration 83000...
+2025-07-31 20:06:40 -              Trainer: [    INFO] - Validation results | SSIM=0.9557, PSNR=34.85
+2025-07-31 20:06:40 -              Trainer: [    INFO] - saved new best model at iter 83000 with PSNR 34.85 to ./checkpoints_SRD/model_best_SRD.pth
+2025-07-31 20:07:04 -              Trainer: [    INFO] - Epoch [248/600] completed in 110.16s | Loss: 0.0092 | SSIM: 0.9714 | PSNR: 36.50 | LR: 0.00013289
+2025-07-31 20:08:45 -              Trainer: [    INFO] - Epoch [249/600] completed in 100.74s | Loss: 0.0092 | SSIM: 0.9715 | PSNR: 36.55 | LR: 0.00013239
+2025-07-31 20:10:26 -              Trainer: [    INFO] - Epoch [250/600] completed in 100.59s | Loss: 0.0092 | SSIM: 0.9714 | PSNR: 36.53 | LR: 0.00013190
+2025-07-31 20:10:26 -              Trainer: [    INFO] - Saved periodic model checkpoint to checkpoints_SRD/model_epoch_250_SRD.pth
+2025-07-31 20:11:41 -              Trainer: [    INFO] - Validating at iteration 84000...
+2025-07-31 20:11:50 -              Trainer: [    INFO] - Validation results | SSIM=0.9558, PSNR=34.86
+2025-07-31 20:11:51 -              Trainer: [    INFO] - saved new best model at iter 84000 with PSNR 34.86 to ./checkpoints_SRD/model_best_SRD.pth
+2025-07-31 20:12:16 -              Trainer: [    INFO] - Epoch [251/600] completed in 110.17s | Loss: 0.0092 | SSIM: 0.9713 | PSNR: 36.51 | LR: 0.00013140
+2025-07-31 20:13:56 -              Trainer: [    INFO] - Epoch [252/600] completed in 100.59s | Loss: 0.0092 | SSIM: 0.9714 | PSNR: 36.56 | LR: 0.00013090
+2025-07-31 20:15:37 -              Trainer: [    INFO] - Epoch [253/600] completed in 100.68s | Loss: 0.0091 | SSIM: 0.9715 | PSNR: 36.61 | LR: 0.00013040
+2025-07-31 20:16:51 -              Trainer: [    INFO] - Validating at iteration 85000...
+2025-07-31 20:17:00 -              Trainer: [    INFO] - Validation results | SSIM=0.9555, PSNR=34.90
+2025-07-31 20:17:00 -              Trainer: [    INFO] - saved new best model at iter 85000 with PSNR 34.90 to ./checkpoints_SRD/model_best_SRD.pth
+2025-07-31 20:17:27 -              Trainer: [    INFO] - Epoch [254/600] completed in 109.94s | Loss: 0.0091 | SSIM: 0.9716 | PSNR: 36.53 | LR: 0.00012990
+2025-07-31 20:19:08 -              Trainer: [    INFO] - Epoch [255/600] completed in 100.53s | Loss: 0.0091 | SSIM: 0.9716 | PSNR: 36.60 | LR: 0.00012940
+2025-07-31 20:20:48 -              Trainer: [    INFO] - Epoch [256/600] completed in 100.52s | Loss: 0.0091 | SSIM: 0.9716 | PSNR: 36.59 | LR: 0.00012890
+2025-07-31 20:22:00 -              Trainer: [    INFO] - Validating at iteration 86000...
+2025-07-31 20:22:10 -              Trainer: [    INFO] - Validation results | SSIM=0.9554, PSNR=34.71
+2025-07-31 20:22:39 -              Trainer: [    INFO] - Epoch [257/600] completed in 110.38s | Loss: 0.0091 | SSIM: 0.9716 | PSNR: 36.58 | LR: 0.00012840
+2025-07-31 20:24:19 -              Trainer: [    INFO] - Epoch [258/600] completed in 100.48s | Loss: 0.0091 | SSIM: 0.9716 | PSNR: 36.63 | LR: 0.00012790
+2025-07-31 20:26:00 -              Trainer: [    INFO] - Epoch [259/600] completed in 100.49s | Loss: 0.0091 | SSIM: 0.9717 | PSNR: 36.64 | LR: 0.00012740
+2025-07-31 20:27:10 -              Trainer: [    INFO] - Validating at iteration 87000...
+2025-07-31 20:27:20 -              Trainer: [    INFO] - Validation results | SSIM=0.9558, PSNR=34.95
+2025-07-31 20:27:20 -              Trainer: [    INFO] - saved new best model at iter 87000 with PSNR 34.95 to ./checkpoints_SRD/model_best_SRD.pth
+2025-07-31 20:27:50 -              Trainer: [    INFO] - Epoch [260/600] completed in 110.26s | Loss: 0.0091 | SSIM: 0.9715 | PSNR: 36.61 | LR: 0.00012689
+2025-07-31 20:29:30 -              Trainer: [    INFO] - Epoch [261/600] completed in 100.60s | Loss: 0.0090 | SSIM: 0.9719 | PSNR: 36.67 | LR: 0.00012639
+2025-07-31 20:31:11 -              Trainer: [    INFO] - Epoch [262/600] completed in 100.53s | Loss: 0.0090 | SSIM: 0.9718 | PSNR: 36.66 | LR: 0.00012588
+2025-07-31 20:32:20 -              Trainer: [    INFO] - Validating at iteration 88000...
+2025-07-31 20:32:30 -              Trainer: [    INFO] - Validation results | SSIM=0.9559, PSNR=34.99
+2025-07-31 20:32:30 -              Trainer: [    INFO] - saved new best model at iter 88000 with PSNR 34.99 to ./checkpoints_SRD/model_best_SRD.pth
+2025-07-31 20:33:01 -              Trainer: [    INFO] - Epoch [263/600] completed in 110.00s | Loss: 0.0090 | SSIM: 0.9717 | PSNR: 36.70 | LR: 0.00012538
+2025-07-31 20:34:41 -              Trainer: [    INFO] - Epoch [264/600] completed in 100.55s | Loss: 0.0090 | SSIM: 0.9718 | PSNR: 36.72 | LR: 0.00012487
+2025-07-31 20:36:22 -              Trainer: [    INFO] - Epoch [265/600] completed in 100.78s | Loss: 0.0091 | SSIM: 0.9719 | PSNR: 36.63 | LR: 0.00012436
+2025-07-31 20:37:30 -              Trainer: [    INFO] - Validating at iteration 89000...
+2025-07-31 20:37:40 -              Trainer: [    INFO] - Validation results | SSIM=0.9562, PSNR=34.92
+2025-07-31 20:38:12 -              Trainer: [    INFO] - Epoch [266/600] completed in 110.23s | Loss: 0.0090 | SSIM: 0.9718 | PSNR: 36.68 | LR: 0.00012385
+2025-07-31 20:39:53 -              Trainer: [    INFO] - Epoch [267/600] completed in 100.42s | Loss: 0.0091 | SSIM: 0.9717 | PSNR: 36.61 | LR: 0.00012334
+2025-07-31 20:41:33 -              Trainer: [    INFO] - Epoch [268/600] completed in 100.56s | Loss: 0.0091 | SSIM: 0.9719 | PSNR: 36.66 | LR: 0.00012284
+2025-07-31 20:42:40 -              Trainer: [    INFO] - Validating at iteration 90000...
+2025-07-31 20:42:49 -              Trainer: [    INFO] - Validation results | SSIM=0.9561, PSNR=34.92
+2025-07-31 20:43:24 -              Trainer: [    INFO] - Epoch [269/600] completed in 110.13s | Loss: 0.0090 | SSIM: 0.9719 | PSNR: 36.74 | LR: 0.00012233
+2025-07-31 20:45:04 -              Trainer: [    INFO] - Epoch [270/600] completed in 100.53s | Loss: 0.0090 | SSIM: 0.9719 | PSNR: 36.76 | LR: 0.00012181
+2025-07-31 20:46:45 -              Trainer: [    INFO] - Epoch [271/600] completed in 100.69s | Loss: 0.0089 | SSIM: 0.9719 | PSNR: 36.75 | LR: 0.00012130
+2025-07-31 20:47:50 -              Trainer: [    INFO] - Validating at iteration 91000...
+2025-07-31 20:47:59 -              Trainer: [    INFO] - Validation results | SSIM=0.9563, PSNR=34.98
+2025-07-31 20:48:35 -              Trainer: [    INFO] - Epoch [272/600] completed in 110.03s | Loss: 0.0089 | SSIM: 0.9719 | PSNR: 36.76 | LR: 0.00012079
+2025-07-31 20:50:15 -              Trainer: [    INFO] - Epoch [273/600] completed in 100.61s | Loss: 0.0089 | SSIM: 0.9721 | PSNR: 36.73 | LR: 0.00012028
+2025-07-31 20:51:56 -              Trainer: [    INFO] - Epoch [274/600] completed in 100.68s | Loss: 0.0090 | SSIM: 0.9719 | PSNR: 36.77 | LR: 0.00011977
+2025-07-31 20:52:59 -              Trainer: [    INFO] - Validating at iteration 92000...
+2025-07-31 20:53:09 -              Trainer: [    INFO] - Validation results | SSIM=0.9562, PSNR=34.94
+2025-07-31 20:53:46 -              Trainer: [    INFO] - Epoch [275/600] completed in 109.86s | Loss: 0.0090 | SSIM: 0.9720 | PSNR: 36.75 | LR: 0.00011925
+2025-07-31 20:55:27 -              Trainer: [    INFO] - Epoch [276/600] completed in 100.55s | Loss: 0.0089 | SSIM: 0.9721 | PSNR: 36.81 | LR: 0.00011874
+2025-07-31 20:57:07 -              Trainer: [    INFO] - Epoch [277/600] completed in 100.63s | Loss: 0.0089 | SSIM: 0.9721 | PSNR: 36.77 | LR: 0.00011822
+2025-07-31 20:58:09 -              Trainer: [    INFO] - Validating at iteration 93000...
+2025-07-31 20:58:18 -              Trainer: [    INFO] - Validation results | SSIM=0.9562, PSNR=34.76
+2025-07-31 20:58:57 -              Trainer: [    INFO] - Epoch [278/600] completed in 109.93s | Loss: 0.0089 | SSIM: 0.9721 | PSNR: 36.82 | LR: 0.00011771
+2025-07-31 21:00:38 -              Trainer: [    INFO] - Epoch [279/600] completed in 100.59s | Loss: 0.0089 | SSIM: 0.9721 | PSNR: 36.79 | LR: 0.00011719
+2025-07-31 21:02:18 -              Trainer: [    INFO] - Epoch [280/600] completed in 100.45s | Loss: 0.0089 | SSIM: 0.9721 | PSNR: 36.78 | LR: 0.00011668
+2025-07-31 21:03:18 -              Trainer: [    INFO] - Validating at iteration 94000...
+2025-07-31 21:03:28 -              Trainer: [    INFO] - Validation results | SSIM=0.9563, PSNR=35.06
+2025-07-31 21:03:28 -              Trainer: [    INFO] - saved new best model at iter 94000 with PSNR 35.06 to ./checkpoints_SRD/model_best_SRD.pth
+2025-07-31 21:04:08 -              Trainer: [    INFO] - Epoch [281/600] completed in 110.05s | Loss: 0.0089 | SSIM: 0.9722 | PSNR: 36.83 | LR: 0.00011616
+2025-07-31 21:05:49 -              Trainer: [    INFO] - Epoch [282/600] completed in 100.55s | Loss: 0.0089 | SSIM: 0.9721 | PSNR: 36.80 | LR: 0.00011564
+2025-07-31 21:07:29 -              Trainer: [    INFO] - Epoch [283/600] completed in 100.48s | Loss: 0.0089 | SSIM: 0.9723 | PSNR: 36.84 | LR: 0.00011513
+2025-07-31 21:08:28 -              Trainer: [    INFO] - Validating at iteration 95000...
+2025-07-31 21:08:37 -              Trainer: [    INFO] - Validation results | SSIM=0.9565, PSNR=34.98
+2025-07-31 21:09:19 -              Trainer: [    INFO] - Epoch [284/600] completed in 109.71s | Loss: 0.0089 | SSIM: 0.9723 | PSNR: 36.86 | LR: 0.00011461
+2025-07-31 21:10:59 -              Trainer: [    INFO] - Epoch [285/600] completed in 100.41s | Loss: 0.0089 | SSIM: 0.9723 | PSNR: 36.82 | LR: 0.00011409
+2025-07-31 21:12:40 -              Trainer: [    INFO] - Epoch [286/600] completed in 100.49s | Loss: 0.0089 | SSIM: 0.9723 | PSNR: 36.88 | LR: 0.00011357
+2025-07-31 21:13:37 -              Trainer: [    INFO] - Validating at iteration 96000...
+2025-07-31 21:13:47 -              Trainer: [    INFO] - Validation results | SSIM=0.9564, PSNR=35.03
+2025-07-31 21:14:30 -              Trainer: [    INFO] - Epoch [287/600] completed in 109.89s | Loss: 0.0088 | SSIM: 0.9724 | PSNR: 36.96 | LR: 0.00011305
+2025-07-31 21:16:10 -              Trainer: [    INFO] - Epoch [288/600] completed in 100.41s | Loss: 0.0088 | SSIM: 0.9723 | PSNR: 36.89 | LR: 0.00011253
+2025-07-31 21:17:51 -              Trainer: [    INFO] - Epoch [289/600] completed in 100.42s | Loss: 0.0088 | SSIM: 0.9726 | PSNR: 36.95 | LR: 0.00011201
+2025-07-31 21:18:46 -              Trainer: [    INFO] - Validating at iteration 97000...
+2025-07-31 21:18:56 -              Trainer: [    INFO] - Validation results | SSIM=0.9563, PSNR=35.08
+2025-07-31 21:18:56 -              Trainer: [    INFO] - saved new best model at iter 97000 with PSNR 35.08 to ./checkpoints_SRD/model_best_SRD.pth
+2025-07-31 21:19:40 -              Trainer: [    INFO] - Epoch [290/600] completed in 109.82s | Loss: 0.0088 | SSIM: 0.9723 | PSNR: 36.87 | LR: 0.00011149
+2025-07-31 21:21:21 -              Trainer: [    INFO] - Epoch [291/600] completed in 100.47s | Loss: 0.0088 | SSIM: 0.9726 | PSNR: 36.94 | LR: 0.00011097
+2025-07-31 21:23:01 -              Trainer: [    INFO] - Epoch [292/600] completed in 100.48s | Loss: 0.0088 | SSIM: 0.9723 | PSNR: 36.90 | LR: 0.00011045
+2025-07-31 21:23:56 -              Trainer: [    INFO] - Validating at iteration 98000...
+2025-07-31 21:24:05 -              Trainer: [    INFO] - Validation results | SSIM=0.9565, PSNR=35.12
+2025-07-31 21:24:05 -              Trainer: [    INFO] - saved new best model at iter 98000 with PSNR 35.12 to ./checkpoints_SRD/model_best_SRD.pth
+2025-07-31 21:24:51 -              Trainer: [    INFO] - Epoch [293/600] completed in 109.77s | Loss: 0.0088 | SSIM: 0.9725 | PSNR: 36.93 | LR: 0.00010993
+2025-07-31 21:26:32 -              Trainer: [    INFO] - Epoch [294/600] completed in 100.44s | Loss: 0.0088 | SSIM: 0.9723 | PSNR: 36.90 | LR: 0.00010941
+2025-07-31 21:28:12 -              Trainer: [    INFO] - Epoch [295/600] completed in 100.55s | Loss: 0.0087 | SSIM: 0.9725 | PSNR: 36.97 | LR: 0.00010889
+2025-07-31 21:29:05 -              Trainer: [    INFO] - Validating at iteration 99000...
+2025-07-31 21:29:14 -              Trainer: [    INFO] - Validation results | SSIM=0.9569, PSNR=35.11
+2025-07-31 21:30:02 -              Trainer: [    INFO] - Epoch [296/600] completed in 109.47s | Loss: 0.0087 | SSIM: 0.9726 | PSNR: 37.00 | LR: 0.00010837
+2025-07-31 21:31:42 -              Trainer: [    INFO] - Epoch [297/600] completed in 100.45s | Loss: 0.0088 | SSIM: 0.9724 | PSNR: 36.95 | LR: 0.00010785
+2025-07-31 21:33:23 -              Trainer: [    INFO] - Epoch [298/600] completed in 100.45s | Loss: 0.0088 | SSIM: 0.9725 | PSNR: 36.95 | LR: 0.00010732
+2025-07-31 21:34:14 -              Trainer: [    INFO] - Validating at iteration 100000...
+2025-07-31 21:34:23 -              Trainer: [    INFO] - Validation results | SSIM=0.9565, PSNR=35.19
+2025-07-31 21:34:23 -              Trainer: [    INFO] - saved new best model at iter 100000 with PSNR 35.19 to ./checkpoints_SRD/model_best_SRD.pth
+2025-07-31 21:35:13 -              Trainer: [    INFO] - Epoch [299/600] completed in 109.99s | Loss: 0.0088 | SSIM: 0.9724 | PSNR: 36.94 | LR: 0.00010680
+2025-07-31 21:36:53 -              Trainer: [    INFO] - Epoch [300/600] completed in 100.48s | Loss: 0.0087 | SSIM: 0.9726 | PSNR: 36.98 | LR: 0.00010628
+2025-07-31 21:36:53 -              Trainer: [    INFO] - Saved periodic model checkpoint to checkpoints_SRD/model_epoch_300_SRD.pth
+2025-07-31 21:38:34 -              Trainer: [    INFO] - Epoch [301/600] completed in 100.58s | Loss: 0.0086 | SSIM: 0.9728 | PSNR: 37.06 | LR: 0.00010576
+2025-07-31 21:39:23 -              Trainer: [    INFO] - Validating at iteration 101000...
+2025-07-31 21:39:33 -              Trainer: [    INFO] - Validation results | SSIM=0.9568, PSNR=35.11
+2025-07-31 21:40:24 -              Trainer: [    INFO] - Epoch [302/600] completed in 109.83s | Loss: 0.0087 | SSIM: 0.9727 | PSNR: 37.03 | LR: 0.00010523
+2025-07-31 21:42:04 -              Trainer: [    INFO] - Epoch [303/600] completed in 100.47s | Loss: 0.0087 | SSIM: 0.9726 | PSNR: 37.02 | LR: 0.00010471
+2025-07-31 21:43:44 -              Trainer: [    INFO] - Epoch [304/600] completed in 100.45s | Loss: 0.0087 | SSIM: 0.9727 | PSNR: 37.01 | LR: 0.00010419
+2025-07-31 21:44:33 -              Trainer: [    INFO] - Validating at iteration 102000...
+2025-07-31 21:44:42 -              Trainer: [    INFO] - Validation results | SSIM=0.9572, PSNR=35.16
+2025-07-31 21:45:34 -              Trainer: [    INFO] - Epoch [305/600] completed in 109.63s | Loss: 0.0087 | SSIM: 0.9727 | PSNR: 36.99 | LR: 0.00010366
+2025-07-31 21:47:15 -              Trainer: [    INFO] - Epoch [306/600] completed in 100.55s | Loss: 0.0086 | SSIM: 0.9728 | PSNR: 37.11 | LR: 0.00010314
+2025-07-31 21:48:55 -              Trainer: [    INFO] - Epoch [307/600] completed in 100.47s | Loss: 0.0087 | SSIM: 0.9727 | PSNR: 37.01 | LR: 0.00010262
+2025-07-31 21:49:42 -              Trainer: [    INFO] - Validating at iteration 103000...
+2025-07-31 21:49:51 -              Trainer: [    INFO] - Validation results | SSIM=0.9567, PSNR=35.18
+2025-07-31 21:50:45 -              Trainer: [    INFO] - Epoch [308/600] completed in 109.78s | Loss: 0.0086 | SSIM: 0.9728 | PSNR: 37.08 | LR: 0.00010209
+2025-07-31 21:52:25 -              Trainer: [    INFO] - Epoch [309/600] completed in 100.45s | Loss: 0.0087 | SSIM: 0.9727 | PSNR: 36.99 | LR: 0.00010157
+2025-07-31 21:54:06 -              Trainer: [    INFO] - Epoch [310/600] completed in 100.49s | Loss: 0.0087 | SSIM: 0.9728 | PSNR: 37.02 | LR: 0.00010105
+2025-07-31 21:54:51 -              Trainer: [    INFO] - Validating at iteration 104000...
+2025-07-31 21:55:00 -              Trainer: [    INFO] - Validation results | SSIM=0.9567, PSNR=35.19
+2025-07-31 21:55:55 -              Trainer: [    INFO] - Epoch [311/600] completed in 109.40s | Loss: 0.0086 | SSIM: 0.9729 | PSNR: 37.12 | LR: 0.00010052
+2025-07-31 21:57:36 -              Trainer: [    INFO] - Epoch [312/600] completed in 100.53s | Loss: 0.0086 | SSIM: 0.9728 | PSNR: 37.07 | LR: 0.00010000
+2025-07-31 21:59:16 -              Trainer: [    INFO] - Epoch [313/600] completed in 100.45s | Loss: 0.0086 | SSIM: 0.9729 | PSNR: 37.16 | LR: 0.00009948
+2025-07-31 22:00:00 -              Trainer: [    INFO] - Validating at iteration 105000...
+2025-07-31 22:00:09 -              Trainer: [    INFO] - Validation results | SSIM=0.9571, PSNR=35.24
+2025-07-31 22:00:09 -              Trainer: [    INFO] - saved new best model at iter 105000 with PSNR 35.24 to ./checkpoints_SRD/model_best_SRD.pth
+2025-07-31 22:01:06 -              Trainer: [    INFO] - Epoch [314/600] completed in 109.64s | Loss: 0.0086 | SSIM: 0.9728 | PSNR: 37.04 | LR: 0.00009895
+2025-07-31 22:02:46 -              Trainer: [    INFO] - Epoch [315/600] completed in 100.39s | Loss: 0.0086 | SSIM: 0.9730 | PSNR: 37.14 | LR: 0.00009843
+2025-07-31 22:04:27 -              Trainer: [    INFO] - Epoch [316/600] completed in 100.52s | Loss: 0.0086 | SSIM: 0.9729 | PSNR: 37.17 | LR: 0.00009791
+2025-07-31 22:05:09 -              Trainer: [    INFO] - Validating at iteration 106000...
+2025-07-31 22:05:18 -              Trainer: [    INFO] - Validation results | SSIM=0.9575, PSNR=35.30
+2025-07-31 22:05:18 -              Trainer: [    INFO] - saved new best model at iter 106000 with PSNR 35.30 to ./checkpoints_SRD/model_best_SRD.pth
+2025-07-31 22:06:16 -              Trainer: [    INFO] - Epoch [317/600] completed in 109.50s | Loss: 0.0086 | SSIM: 0.9731 | PSNR: 37.14 | LR: 0.00009738
+2025-07-31 22:07:57 -              Trainer: [    INFO] - Epoch [318/600] completed in 100.61s | Loss: 0.0086 | SSIM: 0.9730 | PSNR: 37.14 | LR: 0.00009686
+2025-07-31 22:09:37 -              Trainer: [    INFO] - Epoch [319/600] completed in 100.45s | Loss: 0.0085 | SSIM: 0.9732 | PSNR: 37.20 | LR: 0.00009634
+2025-07-31 22:10:18 -              Trainer: [    INFO] - Validating at iteration 107000...
+2025-07-31 22:10:28 -              Trainer: [    INFO] - Validation results | SSIM=0.9574, PSNR=35.27
+2025-07-31 22:11:27 -              Trainer: [    INFO] - Epoch [320/600] completed in 110.01s | Loss: 0.0085 | SSIM: 0.9730 | PSNR: 37.16 | LR: 0.00009581
+2025-07-31 22:13:08 -              Trainer: [    INFO] - Epoch [321/600] completed in 100.50s | Loss: 0.0086 | SSIM: 0.9728 | PSNR: 37.12 | LR: 0.00009529
+2025-07-31 22:14:48 -              Trainer: [    INFO] - Epoch [322/600] completed in 100.49s | Loss: 0.0085 | SSIM: 0.9731 | PSNR: 37.21 | LR: 0.00009477
+2025-07-31 22:15:28 -              Trainer: [    INFO] - Validating at iteration 108000...
+2025-07-31 22:15:37 -              Trainer: [    INFO] - Validation results | SSIM=0.9575, PSNR=35.34
+2025-07-31 22:15:37 -              Trainer: [    INFO] - saved new best model at iter 108000 with PSNR 35.34 to ./checkpoints_SRD/model_best_SRD.pth
+2025-07-31 22:16:38 -              Trainer: [    INFO] - Epoch [323/600] completed in 109.57s | Loss: 0.0086 | SSIM: 0.9728 | PSNR: 37.15 | LR: 0.00009424
+2025-07-31 22:18:18 -              Trainer: [    INFO] - Epoch [324/600] completed in 100.49s | Loss: 0.0085 | SSIM: 0.9731 | PSNR: 37.19 | LR: 0.00009372
+2025-07-31 22:19:59 -              Trainer: [    INFO] - Epoch [325/600] completed in 100.54s | Loss: 0.0085 | SSIM: 0.9731 | PSNR: 37.23 | LR: 0.00009320
+2025-07-31 22:20:37 -              Trainer: [    INFO] - Validating at iteration 109000...
+2025-07-31 22:20:46 -              Trainer: [    INFO] - Validation results | SSIM=0.9573, PSNR=35.33
+2025-07-31 22:21:49 -              Trainer: [    INFO] - Epoch [326/600] completed in 109.62s | Loss: 0.0085 | SSIM: 0.9734 | PSNR: 37.18 | LR: 0.00009268
+2025-07-31 22:23:29 -              Trainer: [    INFO] - Epoch [327/600] completed in 100.46s | Loss: 0.0085 | SSIM: 0.9732 | PSNR: 37.25 | LR: 0.00009215
+2025-07-31 22:25:10 -              Trainer: [    INFO] - Epoch [328/600] completed in 100.54s | Loss: 0.0085 | SSIM: 0.9733 | PSNR: 37.25 | LR: 0.00009163
+2025-07-31 22:25:46 -              Trainer: [    INFO] - Validating at iteration 110000...
+2025-07-31 22:25:56 -              Trainer: [    INFO] - Validation results | SSIM=0.9574, PSNR=35.31
+2025-07-31 22:27:00 -              Trainer: [    INFO] - Epoch [329/600] completed in 109.96s | Loss: 0.0085 | SSIM: 0.9733 | PSNR: 37.27 | LR: 0.00009111
+2025-07-31 22:28:40 -              Trainer: [    INFO] - Epoch [330/600] completed in 100.56s | Loss: 0.0084 | SSIM: 0.9733 | PSNR: 37.30 | LR: 0.00009059
+2025-07-31 22:30:21 -              Trainer: [    INFO] - Epoch [331/600] completed in 100.47s | Loss: 0.0084 | SSIM: 0.9734 | PSNR: 37.24 | LR: 0.00009007
+2025-07-31 22:30:55 -              Trainer: [    INFO] - Validating at iteration 111000...
+2025-07-31 22:31:05 -              Trainer: [    INFO] - Validation results | SSIM=0.9571, PSNR=35.28
+2025-07-31 22:32:10 -              Trainer: [    INFO] - Epoch [332/600] completed in 109.44s | Loss: 0.0085 | SSIM: 0.9732 | PSNR: 37.23 | LR: 0.00008955
+2025-07-31 22:33:51 -              Trainer: [    INFO] - Epoch [333/600] completed in 100.61s | Loss: 0.0084 | SSIM: 0.9734 | PSNR: 37.28 | LR: 0.00008903
+2025-07-31 22:35:31 -              Trainer: [    INFO] - Epoch [334/600] completed in 100.56s | Loss: 0.0085 | SSIM: 0.9733 | PSNR: 37.23 | LR: 0.00008851
+2025-07-31 22:36:05 -              Trainer: [    INFO] - Validating at iteration 112000...
+2025-07-31 22:36:14 -              Trainer: [    INFO] - Validation results | SSIM=0.9571, PSNR=35.28
+2025-07-31 22:37:21 -              Trainer: [    INFO] - Epoch [335/600] completed in 109.60s | Loss: 0.0084 | SSIM: 0.9735 | PSNR: 37.26 | LR: 0.00008799
+2025-07-31 22:39:01 -              Trainer: [    INFO] - Epoch [336/600] completed in 100.49s | Loss: 0.0084 | SSIM: 0.9735 | PSNR: 37.36 | LR: 0.00008747
+2025-07-31 22:40:42 -              Trainer: [    INFO] - Epoch [337/600] completed in 100.56s | Loss: 0.0084 | SSIM: 0.9735 | PSNR: 37.29 | LR: 0.00008695
+2025-07-31 22:41:14 -              Trainer: [    INFO] - Validating at iteration 113000...
+2025-07-31 22:41:23 -              Trainer: [    INFO] - Validation results | SSIM=0.9565, PSNR=35.36
+2025-07-31 22:41:23 -              Trainer: [    INFO] - saved new best model at iter 113000 with PSNR 35.36 to ./checkpoints_SRD/model_best_SRD.pth
+2025-07-31 22:42:32 -              Trainer: [    INFO] - Epoch [338/600] completed in 109.70s | Loss: 0.0084 | SSIM: 0.9735 | PSNR: 37.30 | LR: 0.00008643
+2025-07-31 22:44:12 -              Trainer: [    INFO] - Epoch [339/600] completed in 100.60s | Loss: 0.0084 | SSIM: 0.9736 | PSNR: 37.30 | LR: 0.00008591
+2025-07-31 22:45:53 -              Trainer: [    INFO] - Epoch [340/600] completed in 100.44s | Loss: 0.0084 | SSIM: 0.9736 | PSNR: 37.34 | LR: 0.00008539
+2025-07-31 22:46:23 -              Trainer: [    INFO] - Validating at iteration 114000...
+2025-07-31 22:46:32 -              Trainer: [    INFO] - Validation results | SSIM=0.9575, PSNR=35.41
+2025-07-31 22:46:33 -              Trainer: [    INFO] - saved new best model at iter 114000 with PSNR 35.41 to ./checkpoints_SRD/model_best_SRD.pth
+2025-07-31 22:47:43 -              Trainer: [    INFO] - Epoch [341/600] completed in 109.91s | Loss: 0.0083 | SSIM: 0.9736 | PSNR: 37.40 | LR: 0.00008487
+2025-07-31 22:49:23 -              Trainer: [    INFO] - Epoch [342/600] completed in 100.61s | Loss: 0.0083 | SSIM: 0.9737 | PSNR: 37.44 | LR: 0.00008436
+2025-07-31 22:51:04 -              Trainer: [    INFO] - Epoch [343/600] completed in 100.57s | Loss: 0.0083 | SSIM: 0.9736 | PSNR: 37.38 | LR: 0.00008384
+2025-07-31 22:51:33 -              Trainer: [    INFO] - Validating at iteration 115000...
+2025-07-31 22:51:42 -              Trainer: [    INFO] - Validation results | SSIM=0.9571, PSNR=35.34
+2025-07-31 22:52:53 -              Trainer: [    INFO] - Epoch [344/600] completed in 109.63s | Loss: 0.0083 | SSIM: 0.9738 | PSNR: 37.43 | LR: 0.00008332
+2025-07-31 22:54:34 -              Trainer: [    INFO] - Epoch [345/600] completed in 100.45s | Loss: 0.0083 | SSIM: 0.9739 | PSNR: 37.39 | LR: 0.00008281
+2025-07-31 22:56:14 -              Trainer: [    INFO] - Epoch [346/600] completed in 100.61s | Loss: 0.0083 | SSIM: 0.9738 | PSNR: 37.42 | LR: 0.00008229
+2025-07-31 22:56:42 -              Trainer: [    INFO] - Validating at iteration 116000...
+2025-07-31 22:56:51 -              Trainer: [    INFO] - Validation results | SSIM=0.9564, PSNR=35.26
+2025-07-31 22:58:04 -              Trainer: [    INFO] - Epoch [347/600] completed in 109.58s | Loss: 0.0083 | SSIM: 0.9739 | PSNR: 37.40 | LR: 0.00008178
+2025-07-31 22:59:45 -              Trainer: [    INFO] - Epoch [348/600] completed in 100.51s | Loss: 0.0083 | SSIM: 0.9738 | PSNR: 37.42 | LR: 0.00008126
+2025-07-31 23:01:25 -              Trainer: [    INFO] - Epoch [349/600] completed in 100.56s | Loss: 0.0083 | SSIM: 0.9740 | PSNR: 37.41 | LR: 0.00008075
+2025-07-31 23:01:51 -              Trainer: [    INFO] - Validating at iteration 117000...
+2025-07-31 23:02:00 -              Trainer: [    INFO] - Validation results | SSIM=0.9573, PSNR=35.39
+2025-07-31 23:03:15 -              Trainer: [    INFO] - Epoch [350/600] completed in 109.74s | Loss: 0.0083 | SSIM: 0.9738 | PSNR: 37.45 | LR: 0.00008023
+2025-07-31 23:03:15 -              Trainer: [    INFO] - Saved periodic model checkpoint to checkpoints_SRD/model_epoch_350_SRD.pth
+2025-07-31 23:04:55 -              Trainer: [    INFO] - Epoch [351/600] completed in 100.42s | Loss: 0.0083 | SSIM: 0.9740 | PSNR: 37.47 | LR: 0.00007972
+2025-07-31 23:06:36 -              Trainer: [    INFO] - Epoch [352/600] completed in 100.59s | Loss: 0.0083 | SSIM: 0.9739 | PSNR: 37.47 | LR: 0.00007921
+2025-07-31 23:07:00 -              Trainer: [    INFO] - Validating at iteration 118000...
+2025-07-31 23:07:10 -              Trainer: [    INFO] - Validation results | SSIM=0.9579, PSNR=35.42
+2025-07-31 23:07:10 -              Trainer: [    INFO] - saved new best model at iter 118000 with PSNR 35.42 to ./checkpoints_SRD/model_best_SRD.pth
+2025-07-31 23:08:26 -              Trainer: [    INFO] - Epoch [353/600] completed in 109.78s | Loss: 0.0082 | SSIM: 0.9740 | PSNR: 37.49 | LR: 0.00007870
+2025-07-31 23:10:06 -              Trainer: [    INFO] - Epoch [354/600] completed in 100.61s | Loss: 0.0082 | SSIM: 0.9740 | PSNR: 37.50 | LR: 0.00007819
+2025-07-31 23:11:47 -              Trainer: [    INFO] - Epoch [355/600] completed in 100.57s | Loss: 0.0082 | SSIM: 0.9742 | PSNR: 37.49 | LR: 0.00007767
+2025-07-31 23:12:10 -              Trainer: [    INFO] - Validating at iteration 119000...
+2025-07-31 23:12:19 -              Trainer: [    INFO] - Validation results | SSIM=0.9577, PSNR=35.42
+2025-07-31 23:13:37 -              Trainer: [    INFO] - Epoch [356/600] completed in 109.60s | Loss: 0.0082 | SSIM: 0.9740 | PSNR: 37.49 | LR: 0.00007716
+2025-07-31 23:15:17 -              Trainer: [    INFO] - Epoch [357/600] completed in 100.55s | Loss: 0.0082 | SSIM: 0.9741 | PSNR: 37.49 | LR: 0.00007666
+2025-07-31 23:16:58 -              Trainer: [    INFO] - Epoch [358/600] completed in 100.53s | Loss: 0.0082 | SSIM: 0.9741 | PSNR: 37.53 | LR: 0.00007615
+2025-07-31 23:17:19 -              Trainer: [    INFO] - Validating at iteration 120000...
+2025-07-31 23:17:28 -              Trainer: [    INFO] - Validation results | SSIM=0.9577, PSNR=35.46
+2025-07-31 23:17:28 -              Trainer: [    INFO] - saved new best model at iter 120000 with PSNR 35.46 to ./checkpoints_SRD/model_best_SRD.pth
+2025-07-31 23:18:47 -              Trainer: [    INFO] - Epoch [359/600] completed in 109.69s | Loss: 0.0082 | SSIM: 0.9742 | PSNR: 37.50 | LR: 0.00007564
+2025-07-31 23:20:28 -              Trainer: [    INFO] - Epoch [360/600] completed in 100.56s | Loss: 0.0082 | SSIM: 0.9742 | PSNR: 37.52 | LR: 0.00007513
+2025-07-31 23:22:08 -              Trainer: [    INFO] - Epoch [361/600] completed in 100.45s | Loss: 0.0082 | SSIM: 0.9742 | PSNR: 37.53 | LR: 0.00007462
+2025-07-31 23:22:28 -              Trainer: [    INFO] - Validating at iteration 121000...
+2025-07-31 23:22:37 -              Trainer: [    INFO] - Validation results | SSIM=0.9580, PSNR=35.38
+2025-07-31 23:23:58 -              Trainer: [    INFO] - Epoch [362/600] completed in 109.24s | Loss: 0.0082 | SSIM: 0.9744 | PSNR: 37.57 | LR: 0.00007412
+2025-07-31 23:25:38 -              Trainer: [    INFO] - Epoch [363/600] completed in 100.53s | Loss: 0.0082 | SSIM: 0.9743 | PSNR: 37.60 | LR: 0.00007361
+2025-07-31 23:27:19 -              Trainer: [    INFO] - Epoch [364/600] completed in 100.49s | Loss: 0.0082 | SSIM: 0.9742 | PSNR: 37.58 | LR: 0.00007311
+2025-07-31 23:27:37 -              Trainer: [    INFO] - Validating at iteration 122000...
+2025-07-31 23:27:46 -              Trainer: [    INFO] - Validation results | SSIM=0.9572, PSNR=35.36
+2025-07-31 23:29:08 -              Trainer: [    INFO] - Epoch [365/600] completed in 109.16s | Loss: 0.0081 | SSIM: 0.9742 | PSNR: 37.61 | LR: 0.00007260
+2025-07-31 23:30:48 -              Trainer: [    INFO] - Epoch [366/600] completed in 100.50s | Loss: 0.0081 | SSIM: 0.9744 | PSNR: 37.66 | LR: 0.00007210
+2025-07-31 23:32:29 -              Trainer: [    INFO] - Epoch [367/600] completed in 100.64s | Loss: 0.0081 | SSIM: 0.9743 | PSNR: 37.62 | LR: 0.00007160
+2025-07-31 23:32:46 -              Trainer: [    INFO] - Validating at iteration 123000...
+2025-07-31 23:32:56 -              Trainer: [    INFO] - Validation results | SSIM=0.9577, PSNR=35.40
+2025-07-31 23:34:19 -              Trainer: [    INFO] - Epoch [368/600] completed in 110.12s | Loss: 0.0081 | SSIM: 0.9744 | PSNR: 37.59 | LR: 0.00007110
+2025-07-31 23:36:00 -              Trainer: [    INFO] - Epoch [369/600] completed in 100.55s | Loss: 0.0081 | SSIM: 0.9745 | PSNR: 37.64 | LR: 0.00007060
+2025-07-31 23:37:40 -              Trainer: [    INFO] - Epoch [370/600] completed in 100.53s | Loss: 0.0081 | SSIM: 0.9744 | PSNR: 37.57 | LR: 0.00007010
+2025-07-31 23:37:56 -              Trainer: [    INFO] - Validating at iteration 124000...
+2025-07-31 23:38:05 -              Trainer: [    INFO] - Validation results | SSIM=0.9583, PSNR=35.53
+2025-07-31 23:38:05 -              Trainer: [    INFO] - saved new best model at iter 124000 with PSNR 35.53 to ./checkpoints_SRD/model_best_SRD.pth
+2025-07-31 23:39:30 -              Trainer: [    INFO] - Epoch [371/600] completed in 110.14s | Loss: 0.0081 | SSIM: 0.9743 | PSNR: 37.62 | LR: 0.00006960
+2025-07-31 23:41:11 -              Trainer: [    INFO] - Epoch [372/600] completed in 100.52s | Loss: 0.0081 | SSIM: 0.9745 | PSNR: 37.65 | LR: 0.00006910
+2025-07-31 23:42:51 -              Trainer: [    INFO] - Epoch [373/600] completed in 100.51s | Loss: 0.0081 | SSIM: 0.9745 | PSNR: 37.62 | LR: 0.00006860
+2025-07-31 23:43:05 -              Trainer: [    INFO] - Validating at iteration 125000...
+2025-07-31 23:43:15 -              Trainer: [    INFO] - Validation results | SSIM=0.9580, PSNR=35.49
+2025-07-31 23:44:41 -              Trainer: [    INFO] - Epoch [374/600] completed in 109.68s | Loss: 0.0081 | SSIM: 0.9746 | PSNR: 37.68 | LR: 0.00006810
+2025-07-31 23:46:22 -              Trainer: [    INFO] - Epoch [375/600] completed in 100.66s | Loss: 0.0081 | SSIM: 0.9745 | PSNR: 37.65 | LR: 0.00006761
+2025-07-31 23:48:02 -              Trainer: [    INFO] - Epoch [376/600] completed in 100.50s | Loss: 0.0080 | SSIM: 0.9746 | PSNR: 37.68 | LR: 0.00006711
+2025-07-31 23:48:15 -              Trainer: [    INFO] - Validating at iteration 126000...
+2025-07-31 23:48:24 -              Trainer: [    INFO] - Validation results | SSIM=0.9578, PSNR=35.52
+2025-07-31 23:49:52 -              Trainer: [    INFO] - Epoch [377/600] completed in 109.53s | Loss: 0.0081 | SSIM: 0.9745 | PSNR: 37.64 | LR: 0.00006662
+2025-07-31 23:51:32 -              Trainer: [    INFO] - Epoch [378/600] completed in 100.47s | Loss: 0.0080 | SSIM: 0.9747 | PSNR: 37.68 | LR: 0.00006613
+2025-07-31 23:53:13 -              Trainer: [    INFO] - Epoch [379/600] completed in 100.55s | Loss: 0.0080 | SSIM: 0.9747 | PSNR: 37.65 | LR: 0.00006563
+2025-07-31 23:53:24 -              Trainer: [    INFO] - Validating at iteration 127000...
+2025-07-31 23:53:33 -              Trainer: [    INFO] - Validation results | SSIM=0.9579, PSNR=35.52
+2025-07-31 23:55:02 -              Trainer: [    INFO] - Epoch [380/600] completed in 109.75s | Loss: 0.0081 | SSIM: 0.9746 | PSNR: 37.64 | LR: 0.00006514
+2025-07-31 23:56:43 -              Trainer: [    INFO] - Epoch [381/600] completed in 100.45s | Loss: 0.0080 | SSIM: 0.9747 | PSNR: 37.72 | LR: 0.00006465
+2025-07-31 23:58:23 -              Trainer: [    INFO] - Epoch [382/600] completed in 100.47s | Loss: 0.0080 | SSIM: 0.9745 | PSNR: 37.68 | LR: 0.00006416
+2025-07-31 23:58:33 -              Trainer: [    INFO] - Validating at iteration 128000...
+2025-07-31 23:58:42 -              Trainer: [    INFO] - Validation results | SSIM=0.9583, PSNR=35.52
+2025-08-01 00:00:13 -              Trainer: [    INFO] - Epoch [383/600] completed in 109.62s | Loss: 0.0081 | SSIM: 0.9747 | PSNR: 37.70 | LR: 0.00006367
+2025-08-01 00:01:54 -              Trainer: [    INFO] - Epoch [384/600] completed in 100.63s | Loss: 0.0080 | SSIM: 0.9746 | PSNR: 37.71 | LR: 0.00006319
+2025-08-01 00:03:34 -              Trainer: [    INFO] - Epoch [385/600] completed in 100.50s | Loss: 0.0080 | SSIM: 0.9746 | PSNR: 37.73 | LR: 0.00006270
+2025-08-01 00:03:42 -              Trainer: [    INFO] - Validating at iteration 129000...
+2025-08-01 00:03:51 -              Trainer: [    INFO] - Validation results | SSIM=0.9580, PSNR=35.48
+2025-08-01 00:05:24 -              Trainer: [    INFO] - Epoch [386/600] completed in 109.41s | Loss: 0.0081 | SSIM: 0.9747 | PSNR: 37.65 | LR: 0.00006222
+2025-08-01 00:07:04 -              Trainer: [    INFO] - Epoch [387/600] completed in 100.51s | Loss: 0.0080 | SSIM: 0.9746 | PSNR: 37.69 | LR: 0.00006173
+2025-08-01 00:08:45 -              Trainer: [    INFO] - Epoch [388/600] completed in 100.68s | Loss: 0.0080 | SSIM: 0.9749 | PSNR: 37.72 | LR: 0.00006125
+2025-08-01 00:08:51 -              Trainer: [    INFO] - Validating at iteration 130000...
+2025-08-01 00:09:00 -              Trainer: [    INFO] - Validation results | SSIM=0.9580, PSNR=35.51
+2025-08-01 00:10:34 -              Trainer: [    INFO] - Epoch [389/600] completed in 109.54s | Loss: 0.0080 | SSIM: 0.9748 | PSNR: 37.79 | LR: 0.00006077
+2025-08-01 00:12:15 -              Trainer: [    INFO] - Epoch [390/600] completed in 100.52s | Loss: 0.0080 | SSIM: 0.9749 | PSNR: 37.78 | LR: 0.00006029
+2025-08-01 00:13:55 -              Trainer: [    INFO] - Epoch [391/600] completed in 100.51s | Loss: 0.0080 | SSIM: 0.9748 | PSNR: 37.78 | LR: 0.00005981
+2025-08-01 00:14:00 -              Trainer: [    INFO] - Validating at iteration 131000...
+2025-08-01 00:14:10 -              Trainer: [    INFO] - Validation results | SSIM=0.9579, PSNR=35.56
+2025-08-01 00:14:10 -              Trainer: [    INFO] - saved new best model at iter 131000 with PSNR 35.56 to ./checkpoints_SRD/model_best_SRD.pth
+2025-08-01 00:15:45 -              Trainer: [    INFO] - Epoch [392/600] completed in 109.91s | Loss: 0.0080 | SSIM: 0.9749 | PSNR: 37.78 | LR: 0.00005933
+2025-08-01 00:17:26 -              Trainer: [    INFO] - Epoch [393/600] completed in 100.69s | Loss: 0.0079 | SSIM: 0.9750 | PSNR: 37.83 | LR: 0.00005885
+2025-08-01 00:19:07 -              Trainer: [    INFO] - Epoch [394/600] completed in 100.80s | Loss: 0.0080 | SSIM: 0.9749 | PSNR: 37.77 | LR: 0.00005837
+2025-08-01 00:19:10 -              Trainer: [    INFO] - Validating at iteration 132000...
+2025-08-01 00:19:20 -              Trainer: [    INFO] - Validation results | SSIM=0.9585, PSNR=35.58
+2025-08-01 00:19:20 -              Trainer: [    INFO] - saved new best model at iter 132000 with PSNR 35.58 to ./checkpoints_SRD/model_best_SRD.pth
+2025-08-01 00:20:57 -              Trainer: [    INFO] - Epoch [395/600] completed in 110.33s | Loss: 0.0080 | SSIM: 0.9749 | PSNR: 37.78 | LR: 0.00005790
+2025-08-01 00:22:38 -              Trainer: [    INFO] - Epoch [396/600] completed in 100.65s | Loss: 0.0079 | SSIM: 0.9749 | PSNR: 37.78 | LR: 0.00005742
+2025-08-01 00:24:18 -              Trainer: [    INFO] - Epoch [397/600] completed in 100.65s | Loss: 0.0079 | SSIM: 0.9750 | PSNR: 37.77 | LR: 0.00005695
+2025-08-01 00:24:20 -              Trainer: [    INFO] - Validating at iteration 133000...
+2025-08-01 00:24:30 -              Trainer: [    INFO] - Validation results | SSIM=0.9584, PSNR=35.61
+2025-08-01 00:24:30 -              Trainer: [    INFO] - saved new best model at iter 133000 with PSNR 35.61 to ./checkpoints_SRD/model_best_SRD.pth
+2025-08-01 00:26:09 -              Trainer: [    INFO] - Epoch [398/600] completed in 110.25s | Loss: 0.0079 | SSIM: 0.9750 | PSNR: 37.80 | LR: 0.00005648
+2025-08-01 00:27:49 -              Trainer: [    INFO] - Epoch [399/600] completed in 100.65s | Loss: 0.0079 | SSIM: 0.9750 | PSNR: 37.86 | LR: 0.00005601
+2025-08-01 00:29:30 -              Trainer: [    INFO] - Validating at iteration 134000...
+2025-08-01 00:29:39 -              Trainer: [    INFO] - Validation results | SSIM=0.9581, PSNR=35.61
+2025-08-01 00:29:39 -              Trainer: [    INFO] - Epoch [400/600] completed in 110.25s | Loss: 0.0079 | SSIM: 0.9749 | PSNR: 37.81 | LR: 0.00005554
+2025-08-01 00:29:40 -              Trainer: [    INFO] - Saved periodic model checkpoint to checkpoints_SRD/model_epoch_400_SRD.pth
+2025-08-01 00:31:20 -              Trainer: [    INFO] - Epoch [401/600] completed in 100.67s | Loss: 0.0079 | SSIM: 0.9751 | PSNR: 37.84 | LR: 0.00005507
+2025-08-01 00:33:01 -              Trainer: [    INFO] - Epoch [402/600] completed in 100.54s | Loss: 0.0079 | SSIM: 0.9750 | PSNR: 37.87 | LR: 0.00005460
+2025-08-01 00:34:40 -              Trainer: [    INFO] - Validating at iteration 135000...
+2025-08-01 00:34:49 -              Trainer: [    INFO] - Validation results | SSIM=0.9585, PSNR=35.64
+2025-08-01 00:34:49 -              Trainer: [    INFO] - saved new best model at iter 135000 with PSNR 35.64 to ./checkpoints_SRD/model_best_SRD.pth
+2025-08-01 00:34:51 -              Trainer: [    INFO] - Epoch [403/600] completed in 110.08s | Loss: 0.0079 | SSIM: 0.9750 | PSNR: 37.85 | LR: 0.00005414
+2025-08-01 00:36:31 -              Trainer: [    INFO] - Epoch [404/600] completed in 100.40s | Loss: 0.0079 | SSIM: 0.9751 | PSNR: 37.84 | LR: 0.00005367
+2025-08-01 00:38:12 -              Trainer: [    INFO] - Epoch [405/600] completed in 100.61s | Loss: 0.0079 | SSIM: 0.9750 | PSNR: 37.83 | LR: 0.00005321
+2025-08-01 00:39:49 -              Trainer: [    INFO] - Validating at iteration 136000...
+2025-08-01 00:39:59 -              Trainer: [    INFO] - Validation results | SSIM=0.9584, PSNR=35.63
+2025-08-01 00:40:02 -              Trainer: [    INFO] - Epoch [406/600] completed in 110.04s | Loss: 0.0079 | SSIM: 0.9751 | PSNR: 37.83 | LR: 0.00005274
+2025-08-01 00:41:42 -              Trainer: [    INFO] - Epoch [407/600] completed in 100.49s | Loss: 0.0079 | SSIM: 0.9751 | PSNR: 37.85 | LR: 0.00005228
+2025-08-01 00:43:23 -              Trainer: [    INFO] - Epoch [408/600] completed in 100.51s | Loss: 0.0079 | SSIM: 0.9751 | PSNR: 37.86 | LR: 0.00005182
+2025-08-01 00:44:59 -              Trainer: [    INFO] - Validating at iteration 137000...
+2025-08-01 00:45:09 -              Trainer: [    INFO] - Validation results | SSIM=0.9583, PSNR=35.57
+2025-08-01 00:45:13 -              Trainer: [    INFO] - Epoch [409/600] completed in 110.16s | Loss: 0.0079 | SSIM: 0.9751 | PSNR: 37.87 | LR: 0.00005137
+2025-08-01 00:46:54 -              Trainer: [    INFO] - Epoch [410/600] completed in 100.53s | Loss: 0.0079 | SSIM: 0.9752 | PSNR: 37.85 | LR: 0.00005091
+2025-08-01 00:48:34 -              Trainer: [    INFO] - Epoch [411/600] completed in 100.52s | Loss: 0.0079 | SSIM: 0.9753 | PSNR: 37.90 | LR: 0.00005045
+2025-08-01 00:50:09 -              Trainer: [    INFO] - Validating at iteration 138000...
+2025-08-01 00:50:18 -              Trainer: [    INFO] - Validation results | SSIM=0.9588, PSNR=35.60
+2025-08-01 00:50:24 -              Trainer: [    INFO] - Epoch [412/600] completed in 109.91s | Loss: 0.0078 | SSIM: 0.9753 | PSNR: 37.92 | LR: 0.00005000
+2025-08-01 00:52:05 -              Trainer: [    INFO] - Epoch [413/600] completed in 100.59s | Loss: 0.0078 | SSIM: 0.9754 | PSNR: 37.92 | LR: 0.00004955
+2025-08-01 00:53:45 -              Trainer: [    INFO] - Epoch [414/600] completed in 100.48s | Loss: 0.0078 | SSIM: 0.9754 | PSNR: 37.94 | LR: 0.00004910
+2025-08-01 00:55:18 -              Trainer: [    INFO] - Validating at iteration 139000...
+2025-08-01 00:55:28 -              Trainer: [    INFO] - Validation results | SSIM=0.9586, PSNR=35.65
+2025-08-01 00:55:28 -              Trainer: [    INFO] - saved new best model at iter 139000 with PSNR 35.65 to ./checkpoints_SRD/model_best_SRD.pth
+2025-08-01 00:55:35 -              Trainer: [    INFO] - Epoch [415/600] completed in 110.06s | Loss: 0.0078 | SSIM: 0.9753 | PSNR: 37.99 | LR: 0.00004865
+2025-08-01 00:57:16 -              Trainer: [    INFO] - Epoch [416/600] completed in 100.61s | Loss: 0.0078 | SSIM: 0.9753 | PSNR: 37.94 | LR: 0.00004820
+2025-08-01 00:58:56 -              Trainer: [    INFO] - Epoch [417/600] completed in 100.65s | Loss: 0.0078 | SSIM: 0.9754 | PSNR: 37.92 | LR: 0.00004775
+2025-08-01 01:00:28 -              Trainer: [    INFO] - Validating at iteration 140000...
+2025-08-01 01:00:38 -              Trainer: [    INFO] - Validation results | SSIM=0.9591, PSNR=35.71
+2025-08-01 01:00:38 -              Trainer: [    INFO] - saved new best model at iter 140000 with PSNR 35.71 to ./checkpoints_SRD/model_best_SRD.pth
+2025-08-01 01:00:47 -              Trainer: [    INFO] - Epoch [418/600] completed in 110.30s | Loss: 0.0078 | SSIM: 0.9754 | PSNR: 37.96 | LR: 0.00004730
+2025-08-01 01:02:27 -              Trainer: [    INFO] - Epoch [419/600] completed in 100.59s | Loss: 0.0078 | SSIM: 0.9752 | PSNR: 37.91 | LR: 0.00004686
+2025-08-01 01:04:08 -              Trainer: [    INFO] - Epoch [420/600] completed in 100.55s | Loss: 0.0078 | SSIM: 0.9754 | PSNR: 37.92 | LR: 0.00004642
+2025-08-01 01:05:38 -              Trainer: [    INFO] - Validating at iteration 141000...
+2025-08-01 01:05:48 -              Trainer: [    INFO] - Validation results | SSIM=0.9591, PSNR=35.71
+2025-08-01 01:05:48 -              Trainer: [    INFO] - saved new best model at iter 141000 with PSNR 35.71 to ./checkpoints_SRD/model_best_SRD.pth
+2025-08-01 01:05:58 -              Trainer: [    INFO] - Epoch [421/600] completed in 110.38s | Loss: 0.0078 | SSIM: 0.9754 | PSNR: 37.94 | LR: 0.00004598
+2025-08-01 01:07:39 -              Trainer: [    INFO] - Epoch [422/600] completed in 100.75s | Loss: 0.0078 | SSIM: 0.9753 | PSNR: 37.98 | LR: 0.00004554
+2025-08-01 01:09:20 -              Trainer: [    INFO] - Epoch [423/600] completed in 100.55s | Loss: 0.0077 | SSIM: 0.9754 | PSNR: 38.01 | LR: 0.00004510
+2025-08-01 01:10:48 -              Trainer: [    INFO] - Validating at iteration 142000...
+2025-08-01 01:10:58 -              Trainer: [    INFO] - Validation results | SSIM=0.9587, PSNR=35.71
+2025-08-01 01:11:10 -              Trainer: [    INFO] - Epoch [424/600] completed in 110.15s | Loss: 0.0078 | SSIM: 0.9754 | PSNR: 37.94 | LR: 0.00004466
+2025-08-01 01:12:50 -              Trainer: [    INFO] - Epoch [425/600] completed in 100.51s | Loss: 0.0078 | SSIM: 0.9755 | PSNR: 37.94 | LR: 0.00004423
+2025-08-01 01:14:31 -              Trainer: [    INFO] - Epoch [426/600] completed in 100.61s | Loss: 0.0078 | SSIM: 0.9755 | PSNR: 38.00 | LR: 0.00004379
+2025-08-01 01:15:58 -              Trainer: [    INFO] - Validating at iteration 143000...
+2025-08-01 01:16:07 -              Trainer: [    INFO] - Validation results | SSIM=0.9589, PSNR=35.69
+2025-08-01 01:16:21 -              Trainer: [    INFO] - Epoch [427/600] completed in 110.00s | Loss: 0.0078 | SSIM: 0.9756 | PSNR: 37.96 | LR: 0.00004336
+2025-08-01 01:18:01 -              Trainer: [    INFO] - Epoch [428/600] completed in 100.33s | Loss: 0.0077 | SSIM: 0.9756 | PSNR: 37.97 | LR: 0.00004293
+2025-08-01 01:19:42 -              Trainer: [    INFO] - Epoch [429/600] completed in 100.43s | Loss: 0.0078 | SSIM: 0.9755 | PSNR: 37.98 | LR: 0.00004250
+2025-08-01 01:21:07 -              Trainer: [    INFO] - Validating at iteration 144000...
+2025-08-01 01:21:17 -              Trainer: [    INFO] - Validation results | SSIM=0.9587, PSNR=35.71
+2025-08-01 01:21:17 -              Trainer: [    INFO] - saved new best model at iter 144000 with PSNR 35.71 to ./checkpoints_SRD/model_best_SRD.pth
+2025-08-01 01:21:32 -              Trainer: [    INFO] - Epoch [430/600] completed in 110.34s | Loss: 0.0077 | SSIM: 0.9756 | PSNR: 38.02 | LR: 0.00004207
+2025-08-01 01:23:12 -              Trainer: [    INFO] - Epoch [431/600] completed in 100.37s | Loss: 0.0077 | SSIM: 0.9755 | PSNR: 37.98 | LR: 0.00004165
+2025-08-01 01:24:53 -              Trainer: [    INFO] - Epoch [432/600] completed in 100.40s | Loss: 0.0077 | SSIM: 0.9756 | PSNR: 38.00 | LR: 0.00004122
+2025-08-01 01:26:17 -              Trainer: [    INFO] - Validating at iteration 145000...
+2025-08-01 01:26:26 -              Trainer: [    INFO] - Validation results | SSIM=0.9592, PSNR=35.74
+2025-08-01 01:26:26 -              Trainer: [    INFO] - saved new best model at iter 145000 with PSNR 35.74 to ./checkpoints_SRD/model_best_SRD.pth
+2025-08-01 01:26:42 -              Trainer: [    INFO] - Epoch [433/600] completed in 109.49s | Loss: 0.0077 | SSIM: 0.9757 | PSNR: 38.03 | LR: 0.00004080
+2025-08-01 01:28:23 -              Trainer: [    INFO] - Epoch [434/600] completed in 100.35s | Loss: 0.0077 | SSIM: 0.9758 | PSNR: 38.01 | LR: 0.00004038
+2025-08-01 01:30:03 -              Trainer: [    INFO] - Epoch [435/600] completed in 100.58s | Loss: 0.0077 | SSIM: 0.9757 | PSNR: 38.04 | LR: 0.00003996
+2025-08-01 01:31:26 -              Trainer: [    INFO] - Validating at iteration 146000...
+2025-08-01 01:31:35 -              Trainer: [    INFO] - Validation results | SSIM=0.9589, PSNR=35.71
+2025-08-01 01:31:53 -              Trainer: [    INFO] - Epoch [436/600] completed in 109.77s | Loss: 0.0077 | SSIM: 0.9755 | PSNR: 38.02 | LR: 0.00003954
+2025-08-01 01:33:34 -              Trainer: [    INFO] - Epoch [437/600] completed in 100.54s | Loss: 0.0077 | SSIM: 0.9757 | PSNR: 38.04 | LR: 0.00003912
+2025-08-01 01:35:14 -              Trainer: [    INFO] - Epoch [438/600] completed in 100.36s | Loss: 0.0077 | SSIM: 0.9758 | PSNR: 38.03 | LR: 0.00003871
+2025-08-01 01:36:35 -              Trainer: [    INFO] - Validating at iteration 147000...
+2025-08-01 01:36:44 -              Trainer: [    INFO] - Validation results | SSIM=0.9590, PSNR=35.74
+2025-08-01 01:36:45 -              Trainer: [    INFO] - saved new best model at iter 147000 with PSNR 35.74 to ./checkpoints_SRD/model_best_SRD.pth
+2025-08-01 01:37:04 -              Trainer: [    INFO] - Epoch [439/600] completed in 109.95s | Loss: 0.0077 | SSIM: 0.9758 | PSNR: 38.09 | LR: 0.00003830
+2025-08-01 01:38:44 -              Trainer: [    INFO] - Epoch [440/600] completed in 100.35s | Loss: 0.0077 | SSIM: 0.9757 | PSNR: 38.09 | LR: 0.00003789
+2025-08-01 01:40:25 -              Trainer: [    INFO] - Epoch [441/600] completed in 100.37s | Loss: 0.0077 | SSIM: 0.9758 | PSNR: 38.09 | LR: 0.00003748
+2025-08-01 01:41:44 -              Trainer: [    INFO] - Validating at iteration 148000...
+2025-08-01 01:41:53 -              Trainer: [    INFO] - Validation results | SSIM=0.9589, PSNR=35.74
+2025-08-01 01:41:53 -              Trainer: [    INFO] - saved new best model at iter 148000 with PSNR 35.74 to ./checkpoints_SRD/model_best_SRD.pth
+2025-08-01 01:42:14 -              Trainer: [    INFO] - Epoch [442/600] completed in 109.72s | Loss: 0.0077 | SSIM: 0.9756 | PSNR: 38.08 | LR: 0.00003707
+2025-08-01 01:43:55 -              Trainer: [    INFO] - Epoch [443/600] completed in 100.46s | Loss: 0.0077 | SSIM: 0.9757 | PSNR: 38.03 | LR: 0.00003666
+2025-08-01 01:45:35 -              Trainer: [    INFO] - Epoch [444/600] completed in 100.38s | Loss: 0.0077 | SSIM: 0.9757 | PSNR: 38.03 | LR: 0.00003626
+2025-08-01 01:46:53 -              Trainer: [    INFO] - Validating at iteration 149000...
+2025-08-01 01:47:02 -              Trainer: [    INFO] - Validation results | SSIM=0.9587, PSNR=35.77
+2025-08-01 01:47:02 -              Trainer: [    INFO] - saved new best model at iter 149000 with PSNR 35.77 to ./checkpoints_SRD/model_best_SRD.pth
+2025-08-01 01:47:25 -              Trainer: [    INFO] - Epoch [445/600] completed in 109.52s | Loss: 0.0077 | SSIM: 0.9758 | PSNR: 38.11 | LR: 0.00003586
+2025-08-01 01:49:05 -              Trainer: [    INFO] - Epoch [446/600] completed in 100.35s | Loss: 0.0077 | SSIM: 0.9758 | PSNR: 38.06 | LR: 0.00003545
+2025-08-01 01:50:45 -              Trainer: [    INFO] - Epoch [447/600] completed in 100.39s | Loss: 0.0077 | SSIM: 0.9758 | PSNR: 38.09 | LR: 0.00003506
+2025-08-01 01:52:02 -              Trainer: [    INFO] - Validating at iteration 150000...
+2025-08-01 01:52:11 -              Trainer: [    INFO] - Validation results | SSIM=0.9587, PSNR=35.77
+2025-08-01 01:52:11 -              Trainer: [    INFO] - saved new best model at iter 150000 with PSNR 35.77 to ./checkpoints_SRD/model_best_SRD.pth
+2025-08-01 01:52:35 -              Trainer: [    INFO] - Epoch [448/600] completed in 109.52s | Loss: 0.0076 | SSIM: 0.9759 | PSNR: 38.17 | LR: 0.00003466
+2025-08-01 01:54:15 -              Trainer: [    INFO] - Epoch [449/600] completed in 100.41s | Loss: 0.0077 | SSIM: 0.9758 | PSNR: 38.14 | LR: 0.00003426
+2025-08-01 01:55:56 -              Trainer: [    INFO] - Epoch [450/600] completed in 100.23s | Loss: 0.0076 | SSIM: 0.9758 | PSNR: 38.15 | LR: 0.00003387
+2025-08-01 01:55:56 -              Trainer: [    INFO] - Saved periodic model checkpoint to checkpoints_SRD/model_epoch_450_SRD.pth
+2025-08-01 01:57:11 -              Trainer: [    INFO] - Validating at iteration 151000...
+2025-08-01 01:57:20 -              Trainer: [    INFO] - Validation results | SSIM=0.9592, PSNR=35.77
+2025-08-01 01:57:20 -              Trainer: [    INFO] - saved new best model at iter 151000 with PSNR 35.77 to ./checkpoints_SRD/model_best_SRD.pth
+2025-08-01 01:57:45 -              Trainer: [    INFO] - Epoch [451/600] completed in 109.40s | Loss: 0.0076 | SSIM: 0.9759 | PSNR: 38.11 | LR: 0.00003348
+2025-08-01 01:59:25 -              Trainer: [    INFO] - Epoch [452/600] completed in 100.18s | Loss: 0.0076 | SSIM: 0.9759 | PSNR: 38.08 | LR: 0.00003309
+2025-08-01 02:01:06 -              Trainer: [    INFO] - Epoch [453/600] completed in 100.24s | Loss: 0.0077 | SSIM: 0.9759 | PSNR: 38.11 | LR: 0.00003270
+2025-08-01 02:02:19 -              Trainer: [    INFO] - Validating at iteration 152000...
+2025-08-01 02:02:29 -              Trainer: [    INFO] - Validation results | SSIM=0.9588, PSNR=35.77
+2025-08-01 02:02:55 -              Trainer: [    INFO] - Epoch [454/600] completed in 109.72s | Loss: 0.0076 | SSIM: 0.9759 | PSNR: 38.14 | LR: 0.00003231
+2025-08-01 02:04:35 -              Trainer: [    INFO] - Epoch [455/600] completed in 100.13s | Loss: 0.0077 | SSIM: 0.9758 | PSNR: 38.08 | LR: 0.00003193
+2025-08-01 02:06:16 -              Trainer: [    INFO] - Epoch [456/600] completed in 100.29s | Loss: 0.0076 | SSIM: 0.9759 | PSNR: 38.14 | LR: 0.00003155
+2025-08-01 02:07:28 -              Trainer: [    INFO] - Validating at iteration 153000...
+2025-08-01 02:07:37 -              Trainer: [    INFO] - Validation results | SSIM=0.9591, PSNR=35.78
+2025-08-01 02:07:37 -              Trainer: [    INFO] - saved new best model at iter 153000 with PSNR 35.78 to ./checkpoints_SRD/model_best_SRD.pth
+2025-08-01 02:08:05 -              Trainer: [    INFO] - Epoch [457/600] completed in 109.23s | Loss: 0.0076 | SSIM: 0.9758 | PSNR: 38.14 | LR: 0.00003116
+2025-08-01 02:09:45 -              Trainer: [    INFO] - Epoch [458/600] completed in 100.14s | Loss: 0.0076 | SSIM: 0.9760 | PSNR: 38.14 | LR: 0.00003079
+2025-08-01 02:11:25 -              Trainer: [    INFO] - Epoch [459/600] completed in 100.22s | Loss: 0.0076 | SSIM: 0.9759 | PSNR: 38.12 | LR: 0.00003041
+2025-08-01 02:12:36 -              Trainer: [    INFO] - Validating at iteration 154000...
+2025-08-01 02:12:45 -              Trainer: [    INFO] - Validation results | SSIM=0.9588, PSNR=35.77
+2025-08-01 02:13:15 -              Trainer: [    INFO] - Epoch [460/600] completed in 109.51s | Loss: 0.0076 | SSIM: 0.9759 | PSNR: 38.11 | LR: 0.00003003
+2025-08-01 02:14:55 -              Trainer: [    INFO] - Epoch [461/600] completed in 100.13s | Loss: 0.0076 | SSIM: 0.9762 | PSNR: 38.19 | LR: 0.00002966
+2025-08-01 02:16:35 -              Trainer: [    INFO] - Epoch [462/600] completed in 100.18s | Loss: 0.0076 | SSIM: 0.9760 | PSNR: 38.17 | LR: 0.00002929
+2025-08-01 02:17:44 -              Trainer: [    INFO] - Validating at iteration 155000...
+2025-08-01 02:17:53 -              Trainer: [    INFO] - Validation results | SSIM=0.9591, PSNR=35.78
+2025-08-01 02:17:53 -              Trainer: [    INFO] - saved new best model at iter 155000 with PSNR 35.78 to ./checkpoints_SRD/model_best_SRD.pth
+2025-08-01 02:18:25 -              Trainer: [    INFO] - Epoch [463/600] completed in 109.51s | Loss: 0.0076 | SSIM: 0.9761 | PSNR: 38.17 | LR: 0.00002892
+2025-08-01 02:20:05 -              Trainer: [    INFO] - Epoch [464/600] completed in 100.56s | Loss: 0.0076 | SSIM: 0.9761 | PSNR: 38.21 | LR: 0.00002855
+2025-08-01 02:21:46 -              Trainer: [    INFO] - Epoch [465/600] completed in 100.36s | Loss: 0.0076 | SSIM: 0.9761 | PSNR: 38.16 | LR: 0.00002819
+2025-08-01 02:22:53 -              Trainer: [    INFO] - Validating at iteration 156000...
+2025-08-01 02:23:02 -              Trainer: [    INFO] - Validation results | SSIM=0.9590, PSNR=35.80
+2025-08-01 02:23:02 -              Trainer: [    INFO] - saved new best model at iter 156000 with PSNR 35.80 to ./checkpoints_SRD/model_best_SRD.pth
+2025-08-01 02:23:35 -              Trainer: [    INFO] - Epoch [466/600] completed in 109.39s | Loss: 0.0076 | SSIM: 0.9760 | PSNR: 38.17 | LR: 0.00002782
+2025-08-01 02:25:15 -              Trainer: [    INFO] - Epoch [467/600] completed in 100.23s | Loss: 0.0076 | SSIM: 0.9761 | PSNR: 38.20 | LR: 0.00002746
+2025-08-01 02:26:55 -              Trainer: [    INFO] - Epoch [468/600] completed in 100.33s | Loss: 0.0076 | SSIM: 0.9761 | PSNR: 38.23 | LR: 0.00002710
+2025-08-01 02:28:02 -              Trainer: [    INFO] - Validating at iteration 157000...
+2025-08-01 02:28:11 -              Trainer: [    INFO] - Validation results | SSIM=0.9588, PSNR=35.77
+2025-08-01 02:28:45 -              Trainer: [    INFO] - Epoch [469/600] completed in 109.63s | Loss: 0.0076 | SSIM: 0.9762 | PSNR: 38.23 | LR: 0.00002675
+2025-08-01 02:30:25 -              Trainer: [    INFO] - Epoch [470/600] completed in 100.27s | Loss: 0.0076 | SSIM: 0.9761 | PSNR: 38.16 | LR: 0.00002639
+2025-08-01 02:32:06 -              Trainer: [    INFO] - Epoch [471/600] completed in 100.26s | Loss: 0.0076 | SSIM: 0.9761 | PSNR: 38.21 | LR: 0.00002604
+2025-08-01 02:33:10 -              Trainer: [    INFO] - Validating at iteration 158000...
+2025-08-01 02:33:20 -              Trainer: [    INFO] - Validation results | SSIM=0.9590, PSNR=35.81
+2025-08-01 02:33:20 -              Trainer: [    INFO] - saved new best model at iter 158000 with PSNR 35.81 to ./checkpoints_SRD/model_best_SRD.pth
+2025-08-01 02:33:55 -              Trainer: [    INFO] - Epoch [472/600] completed in 109.82s | Loss: 0.0075 | SSIM: 0.9763 | PSNR: 38.25 | LR: 0.00002569
+2025-08-01 02:35:36 -              Trainer: [    INFO] - Epoch [473/600] completed in 100.29s | Loss: 0.0076 | SSIM: 0.9762 | PSNR: 38.23 | LR: 0.00002534
+2025-08-01 02:37:16 -              Trainer: [    INFO] - Epoch [474/600] completed in 100.26s | Loss: 0.0075 | SSIM: 0.9761 | PSNR: 38.25 | LR: 0.00002499
+2025-08-01 02:38:19 -              Trainer: [    INFO] - Validating at iteration 159000...
+2025-08-01 02:38:29 -              Trainer: [    INFO] - Validation results | SSIM=0.9596, PSNR=35.81
+2025-08-01 02:38:29 -              Trainer: [    INFO] - saved new best model at iter 159000 with PSNR 35.81 to ./checkpoints_SRD/model_best_SRD.pth
+2025-08-01 02:39:06 -              Trainer: [    INFO] - Epoch [475/600] completed in 110.15s | Loss: 0.0076 | SSIM: 0.9760 | PSNR: 38.21 | LR: 0.00002464
+2025-08-01 02:40:46 -              Trainer: [    INFO] - Epoch [476/600] completed in 100.24s | Loss: 0.0075 | SSIM: 0.9762 | PSNR: 38.22 | LR: 0.00002430
+2025-08-01 02:42:27 -              Trainer: [    INFO] - Epoch [477/600] completed in 100.53s | Loss: 0.0075 | SSIM: 0.9762 | PSNR: 38.23 | LR: 0.00002396
+2025-08-01 02:43:29 -              Trainer: [    INFO] - Validating at iteration 160000...
+2025-08-01 02:43:38 -              Trainer: [    INFO] - Validation results | SSIM=0.9593, PSNR=35.83
+2025-08-01 02:43:38 -              Trainer: [    INFO] - saved new best model at iter 160000 with PSNR 35.83 to ./checkpoints_SRD/model_best_SRD.pth
+2025-08-01 02:44:17 -              Trainer: [    INFO] - Epoch [478/600] completed in 109.89s | Loss: 0.0075 | SSIM: 0.9762 | PSNR: 38.24 | LR: 0.00002362
+2025-08-01 02:45:57 -              Trainer: [    INFO] - Epoch [479/600] completed in 100.14s | Loss: 0.0075 | SSIM: 0.9761 | PSNR: 38.24 | LR: 0.00002328
+2025-08-01 02:47:37 -              Trainer: [    INFO] - Epoch [480/600] completed in 100.35s | Loss: 0.0075 | SSIM: 0.9763 | PSNR: 38.28 | LR: 0.00002295
+2025-08-01 02:48:37 -              Trainer: [    INFO] - Validating at iteration 161000...
+2025-08-01 02:48:46 -              Trainer: [    INFO] - Validation results | SSIM=0.9594, PSNR=35.82
+2025-08-01 02:49:27 -              Trainer: [    INFO] - Epoch [481/600] completed in 109.21s | Loss: 0.0075 | SSIM: 0.9763 | PSNR: 38.24 | LR: 0.00002262
+2025-08-01 02:51:07 -              Trainer: [    INFO] - Epoch [482/600] completed in 100.26s | Loss: 0.0075 | SSIM: 0.9763 | PSNR: 38.23 | LR: 0.00002229
+2025-08-01 02:52:47 -              Trainer: [    INFO] - Epoch [483/600] completed in 100.40s | Loss: 0.0075 | SSIM: 0.9762 | PSNR: 38.26 | LR: 0.00002196
+2025-08-01 02:53:46 -              Trainer: [    INFO] - Validating at iteration 162000...
+2025-08-01 02:53:55 -              Trainer: [    INFO] - Validation results | SSIM=0.9592, PSNR=35.82
+2025-08-01 02:54:37 -              Trainer: [    INFO] - Epoch [484/600] completed in 109.30s | Loss: 0.0075 | SSIM: 0.9762 | PSNR: 38.29 | LR: 0.00002163
+2025-08-01 02:56:17 -              Trainer: [    INFO] - Epoch [485/600] completed in 100.25s | Loss: 0.0075 | SSIM: 0.9764 | PSNR: 38.27 | LR: 0.00002131
+2025-08-01 02:57:57 -              Trainer: [    INFO] - Epoch [486/600] completed in 100.14s | Loss: 0.0075 | SSIM: 0.9763 | PSNR: 38.28 | LR: 0.00002098
+2025-08-01 02:58:54 -              Trainer: [    INFO] - Validating at iteration 163000...
+2025-08-01 02:59:03 -              Trainer: [    INFO] - Validation results | SSIM=0.9597, PSNR=35.86
+2025-08-01 02:59:04 -              Trainer: [    INFO] - saved new best model at iter 163000 with PSNR 35.86 to ./checkpoints_SRD/model_best_SRD.pth
+2025-08-01 02:59:47 -              Trainer: [    INFO] - Epoch [487/600] completed in 109.72s | Loss: 0.0075 | SSIM: 0.9765 | PSNR: 38.32 | LR: 0.00002066
+2025-08-01 03:01:27 -              Trainer: [    INFO] - Epoch [488/600] completed in 100.33s | Loss: 0.0075 | SSIM: 0.9762 | PSNR: 38.27 | LR: 0.00002035
+2025-08-01 03:03:07 -              Trainer: [    INFO] - Epoch [489/600] completed in 100.45s | Loss: 0.0075 | SSIM: 0.9764 | PSNR: 38.26 | LR: 0.00002003
+2025-08-01 03:04:03 -              Trainer: [    INFO] - Validating at iteration 164000...
+2025-08-01 03:04:13 -              Trainer: [    INFO] - Validation results | SSIM=0.9593, PSNR=35.84
+2025-08-01 03:04:57 -              Trainer: [    INFO] - Epoch [490/600] completed in 109.95s | Loss: 0.0075 | SSIM: 0.9764 | PSNR: 38.32 | LR: 0.00001972
+2025-08-01 03:06:38 -              Trainer: [    INFO] - Epoch [491/600] completed in 100.48s | Loss: 0.0075 | SSIM: 0.9765 | PSNR: 38.29 | LR: 0.00001941
+2025-08-01 03:08:18 -              Trainer: [    INFO] - Epoch [492/600] completed in 100.53s | Loss: 0.0075 | SSIM: 0.9764 | PSNR: 38.26 | LR: 0.00001910
+2025-08-01 03:09:13 -              Trainer: [    INFO] - Validating at iteration 165000...
+2025-08-01 03:09:22 -              Trainer: [    INFO] - Validation results | SSIM=0.9595, PSNR=35.85
+2025-08-01 03:10:09 -              Trainer: [    INFO] - Epoch [493/600] completed in 110.17s | Loss: 0.0075 | SSIM: 0.9763 | PSNR: 38.30 | LR: 0.00001879
+2025-08-01 03:11:49 -              Trainer: [    INFO] - Epoch [494/600] completed in 100.39s | Loss: 0.0075 | SSIM: 0.9764 | PSNR: 38.30 | LR: 0.00001849
+2025-08-01 03:13:29 -              Trainer: [    INFO] - Epoch [495/600] completed in 100.29s | Loss: 0.0075 | SSIM: 0.9765 | PSNR: 38.38 | LR: 0.00001819
+2025-08-01 03:14:22 -              Trainer: [    INFO] - Validating at iteration 166000...
+2025-08-01 03:14:31 -              Trainer: [    INFO] - Validation results | SSIM=0.9590, PSNR=35.85
+2025-08-01 03:15:19 -              Trainer: [    INFO] - Epoch [496/600] completed in 109.62s | Loss: 0.0075 | SSIM: 0.9764 | PSNR: 38.33 | LR: 0.00001789
+2025-08-01 03:16:59 -              Trainer: [    INFO] - Epoch [497/600] completed in 100.19s | Loss: 0.0075 | SSIM: 0.9763 | PSNR: 38.30 | LR: 0.00001759
+2025-08-01 03:18:39 -              Trainer: [    INFO] - Epoch [498/600] completed in 100.29s | Loss: 0.0075 | SSIM: 0.9764 | PSNR: 38.33 | LR: 0.00001729
+2025-08-01 03:19:30 -              Trainer: [    INFO] - Validating at iteration 167000...
+2025-08-01 03:19:39 -              Trainer: [    INFO] - Validation results | SSIM=0.9597, PSNR=35.85
+2025-08-01 03:20:28 -              Trainer: [    INFO] - Epoch [499/600] completed in 109.08s | Loss: 0.0075 | SSIM: 0.9765 | PSNR: 38.33 | LR: 0.00001700
+2025-08-01 03:22:09 -              Trainer: [    INFO] - Epoch [500/600] completed in 100.16s | Loss: 0.0075 | SSIM: 0.9764 | PSNR: 38.30 | LR: 0.00001671
+2025-08-01 03:22:09 -              Trainer: [    INFO] - Saved periodic model checkpoint to checkpoints_SRD/model_epoch_500_SRD.pth
+2025-08-01 03:23:49 -              Trainer: [    INFO] - Epoch [501/600] completed in 100.17s | Loss: 0.0075 | SSIM: 0.9765 | PSNR: 38.34 | LR: 0.00001642
+2025-08-01 03:24:39 -              Trainer: [    INFO] - Validating at iteration 168000...
+2025-08-01 03:24:48 -              Trainer: [    INFO] - Validation results | SSIM=0.9596, PSNR=35.87
+2025-08-01 03:24:48 -              Trainer: [    INFO] - saved new best model at iter 168000 with PSNR 35.87 to ./checkpoints_SRD/model_best_SRD.pth
+2025-08-01 03:25:39 -              Trainer: [    INFO] - Epoch [502/600] completed in 109.62s | Loss: 0.0074 | SSIM: 0.9766 | PSNR: 38.35 | LR: 0.00001613
+2025-08-01 03:27:19 -              Trainer: [    INFO] - Epoch [503/600] completed in 100.21s | Loss: 0.0074 | SSIM: 0.9765 | PSNR: 38.37 | LR: 0.00001585
+2025-08-01 03:28:59 -              Trainer: [    INFO] - Epoch [504/600] completed in 100.39s | Loss: 0.0075 | SSIM: 0.9765 | PSNR: 38.31 | LR: 0.00001557
+2025-08-01 03:29:47 -              Trainer: [    INFO] - Validating at iteration 169000...
+2025-08-01 03:29:56 -              Trainer: [    INFO] - Validation results | SSIM=0.9591, PSNR=35.86
+2025-08-01 03:30:48 -              Trainer: [    INFO] - Epoch [505/600] completed in 109.35s | Loss: 0.0074 | SSIM: 0.9767 | PSNR: 38.41 | LR: 0.00001529
+2025-08-01 03:32:29 -              Trainer: [    INFO] - Epoch [506/600] completed in 100.33s | Loss: 0.0075 | SSIM: 0.9765 | PSNR: 38.34 | LR: 0.00001501
+2025-08-01 03:34:09 -              Trainer: [    INFO] - Epoch [507/600] completed in 100.39s | Loss: 0.0074 | SSIM: 0.9766 | PSNR: 38.40 | LR: 0.00001474
+2025-08-01 03:34:56 -              Trainer: [    INFO] - Validating at iteration 170000...
+2025-08-01 03:35:05 -              Trainer: [    INFO] - Validation results | SSIM=0.9596, PSNR=35.88
+2025-08-01 03:35:05 -              Trainer: [    INFO] - saved new best model at iter 170000 with PSNR 35.88 to ./checkpoints_SRD/model_best_SRD.pth
+2025-08-01 03:35:59 -              Trainer: [    INFO] - Epoch [508/600] completed in 109.54s | Loss: 0.0074 | SSIM: 0.9767 | PSNR: 38.33 | LR: 0.00001446
+2025-08-01 03:37:39 -              Trainer: [    INFO] - Epoch [509/600] completed in 100.28s | Loss: 0.0074 | SSIM: 0.9766 | PSNR: 38.39 | LR: 0.00001419
+2025-08-01 03:39:19 -              Trainer: [    INFO] - Epoch [510/600] completed in 100.42s | Loss: 0.0074 | SSIM: 0.9767 | PSNR: 38.37 | LR: 0.00001393
+2025-08-01 03:40:05 -              Trainer: [    INFO] - Validating at iteration 171000...
+2025-08-01 03:40:14 -              Trainer: [    INFO] - Validation results | SSIM=0.9591, PSNR=35.86
+2025-08-01 03:41:09 -              Trainer: [    INFO] - Epoch [511/600] completed in 109.23s | Loss: 0.0074 | SSIM: 0.9766 | PSNR: 38.40 | LR: 0.00001366
+2025-08-01 03:42:49 -              Trainer: [    INFO] - Epoch [512/600] completed in 100.44s | Loss: 0.0074 | SSIM: 0.9767 | PSNR: 38.38 | LR: 0.00001340
+2025-08-01 03:44:29 -              Trainer: [    INFO] - Epoch [513/600] completed in 100.19s | Loss: 0.0074 | SSIM: 0.9768 | PSNR: 38.39 | LR: 0.00001314
+2025-08-01 03:45:13 -              Trainer: [    INFO] - Validating at iteration 172000...
+2025-08-01 03:45:22 -              Trainer: [    INFO] - Validation results | SSIM=0.9597, PSNR=35.89
+2025-08-01 03:45:23 -              Trainer: [    INFO] - saved new best model at iter 172000 with PSNR 35.89 to ./checkpoints_SRD/model_best_SRD.pth
+2025-08-01 03:46:19 -              Trainer: [    INFO] - Epoch [514/600] completed in 109.63s | Loss: 0.0074 | SSIM: 0.9766 | PSNR: 38.35 | LR: 0.00001288
+2025-08-01 03:47:59 -              Trainer: [    INFO] - Epoch [515/600] completed in 100.38s | Loss: 0.0074 | SSIM: 0.9767 | PSNR: 38.38 | LR: 0.00001262
+2025-08-01 03:49:40 -              Trainer: [    INFO] - Epoch [516/600] completed in 100.23s | Loss: 0.0074 | SSIM: 0.9765 | PSNR: 38.33 | LR: 0.00001237
+2025-08-01 03:50:22 -              Trainer: [    INFO] - Validating at iteration 173000...
+2025-08-01 03:50:31 -              Trainer: [    INFO] - Validation results | SSIM=0.9595, PSNR=35.89
+2025-08-01 03:50:31 -              Trainer: [    INFO] - saved new best model at iter 173000 with PSNR 35.89 to ./checkpoints_SRD/model_best_SRD.pth
+2025-08-01 03:51:29 -              Trainer: [    INFO] - Epoch [517/600] completed in 109.35s | Loss: 0.0074 | SSIM: 0.9767 | PSNR: 38.42 | LR: 0.00001212
+2025-08-01 03:53:09 -              Trainer: [    INFO] - Epoch [518/600] completed in 100.19s | Loss: 0.0074 | SSIM: 0.9766 | PSNR: 38.41 | LR: 0.00001187
+2025-08-01 03:54:50 -              Trainer: [    INFO] - Epoch [519/600] completed in 100.42s | Loss: 0.0074 | SSIM: 0.9767 | PSNR: 38.43 | LR: 0.00001162
+2025-08-01 03:55:30 -              Trainer: [    INFO] - Validating at iteration 174000...
+2025-08-01 03:55:40 -              Trainer: [    INFO] - Validation results | SSIM=0.9595, PSNR=35.87
+2025-08-01 03:56:39 -              Trainer: [    INFO] - Epoch [520/600] completed in 109.64s | Loss: 0.0074 | SSIM: 0.9767 | PSNR: 38.39 | LR: 0.00001138
+2025-08-01 03:58:19 -              Trainer: [    INFO] - Epoch [521/600] completed in 100.21s | Loss: 0.0074 | SSIM: 0.9768 | PSNR: 38.41 | LR: 0.00001114
+2025-08-01 04:00:00 -              Trainer: [    INFO] - Epoch [522/600] completed in 100.26s | Loss: 0.0074 | SSIM: 0.9768 | PSNR: 38.42 | LR: 0.00001090
+2025-08-01 04:00:39 -              Trainer: [    INFO] - Validating at iteration 175000...
+2025-08-01 04:00:48 -              Trainer: [    INFO] - Validation results | SSIM=0.9591, PSNR=35.88
+2025-08-01 04:01:49 -              Trainer: [    INFO] - Epoch [523/600] completed in 109.73s | Loss: 0.0074 | SSIM: 0.9768 | PSNR: 38.40 | LR: 0.00001066
+2025-08-01 04:03:30 -              Trainer: [    INFO] - Epoch [524/600] completed in 100.35s | Loss: 0.0074 | SSIM: 0.9767 | PSNR: 38.40 | LR: 0.00001043
+2025-08-01 04:05:10 -              Trainer: [    INFO] - Epoch [525/600] completed in 100.36s | Loss: 0.0074 | SSIM: 0.9768 | PSNR: 38.44 | LR: 0.00001020
+2025-08-01 04:05:48 -              Trainer: [    INFO] - Validating at iteration 176000...
+2025-08-01 04:05:57 -              Trainer: [    INFO] - Validation results | SSIM=0.9591, PSNR=35.87
+2025-08-01 04:06:59 -              Trainer: [    INFO] - Epoch [526/600] completed in 109.10s | Loss: 0.0074 | SSIM: 0.9768 | PSNR: 38.40 | LR: 0.00000997
+2025-08-01 04:08:40 -              Trainer: [    INFO] - Epoch [527/600] completed in 100.37s | Loss: 0.0074 | SSIM: 0.9770 | PSNR: 38.46 | LR: 0.00000974
+2025-08-01 04:10:20 -              Trainer: [    INFO] - Epoch [528/600] completed in 100.34s | Loss: 0.0074 | SSIM: 0.9767 | PSNR: 38.35 | LR: 0.00000952
+2025-08-01 04:10:56 -              Trainer: [    INFO] - Validating at iteration 177000...
+2025-08-01 04:11:05 -              Trainer: [    INFO] - Validation results | SSIM=0.9596, PSNR=35.90
+2025-08-01 04:11:06 -              Trainer: [    INFO] - saved new best model at iter 177000 with PSNR 35.90 to ./checkpoints_SRD/model_best_SRD.pth
+2025-08-01 04:12:09 -              Trainer: [    INFO] - Epoch [529/600] completed in 109.59s | Loss: 0.0074 | SSIM: 0.9768 | PSNR: 38.42 | LR: 0.00000930
+2025-08-01 04:13:50 -              Trainer: [    INFO] - Epoch [530/600] completed in 100.43s | Loss: 0.0074 | SSIM: 0.9768 | PSNR: 38.37 | LR: 0.00000908
+2025-08-01 04:15:30 -              Trainer: [    INFO] - Epoch [531/600] completed in 100.35s | Loss: 0.0074 | SSIM: 0.9768 | PSNR: 38.47 | LR: 0.00000886
+2025-08-01 04:16:05 -              Trainer: [    INFO] - Validating at iteration 178000...
+2025-08-01 04:16:14 -              Trainer: [    INFO] - Validation results | SSIM=0.9592, PSNR=35.87
+2025-08-01 04:17:19 -              Trainer: [    INFO] - Epoch [532/600] completed in 109.13s | Loss: 0.0074 | SSIM: 0.9768 | PSNR: 38.44 | LR: 0.00000865
+2025-08-01 04:19:00 -              Trainer: [    INFO] - Epoch [533/600] completed in 100.16s | Loss: 0.0074 | SSIM: 0.9769 | PSNR: 38.45 | LR: 0.00000843
+2025-08-01 04:20:40 -              Trainer: [    INFO] - Epoch [534/600] completed in 100.20s | Loss: 0.0074 | SSIM: 0.9768 | PSNR: 38.45 | LR: 0.00000822
+2025-08-01 04:21:13 -              Trainer: [    INFO] - Validating at iteration 179000...
+2025-08-01 04:21:22 -              Trainer: [    INFO] - Validation results | SSIM=0.9590, PSNR=35.87
+2025-08-01 04:22:29 -              Trainer: [    INFO] - Epoch [535/600] completed in 109.15s | Loss: 0.0074 | SSIM: 0.9769 | PSNR: 38.41 | LR: 0.00000802
+2025-08-01 04:24:09 -              Trainer: [    INFO] - Epoch [536/600] completed in 100.44s | Loss: 0.0074 | SSIM: 0.9769 | PSNR: 38.39 | LR: 0.00000781
+2025-08-01 04:25:50 -              Trainer: [    INFO] - Epoch [537/600] completed in 100.35s | Loss: 0.0073 | SSIM: 0.9768 | PSNR: 38.44 | LR: 0.00000761
+2025-08-01 04:26:22 -              Trainer: [    INFO] - Validating at iteration 180000...
+2025-08-01 04:26:31 -              Trainer: [    INFO] - Validation results | SSIM=0.9595, PSNR=35.89
+2025-08-01 04:27:39 -              Trainer: [    INFO] - Epoch [538/600] completed in 109.47s | Loss: 0.0073 | SSIM: 0.9769 | PSNR: 38.47 | LR: 0.00000741
+2025-08-01 04:29:19 -              Trainer: [    INFO] - Epoch [539/600] completed in 100.17s | Loss: 0.0073 | SSIM: 0.9769 | PSNR: 38.48 | LR: 0.00000722
+2025-08-01 04:31:00 -              Trainer: [    INFO] - Epoch [540/600] completed in 100.37s | Loss: 0.0074 | SSIM: 0.9769 | PSNR: 38.46 | LR: 0.00000702
+2025-08-01 04:31:30 -              Trainer: [    INFO] - Validating at iteration 181000...
+2025-08-01 04:31:39 -              Trainer: [    INFO] - Validation results | SSIM=0.9594, PSNR=35.88
+2025-08-01 04:32:49 -              Trainer: [    INFO] - Epoch [541/600] completed in 109.02s | Loss: 0.0073 | SSIM: 0.9770 | PSNR: 38.46 | LR: 0.00000683
+2025-08-01 04:34:29 -              Trainer: [    INFO] - Epoch [542/600] completed in 100.23s | Loss: 0.0073 | SSIM: 0.9769 | PSNR: 38.44 | LR: 0.00000664
+2025-08-01 04:36:09 -              Trainer: [    INFO] - Epoch [543/600] completed in 100.35s | Loss: 0.0074 | SSIM: 0.9769 | PSNR: 38.41 | LR: 0.00000646
+2025-08-01 04:36:38 -              Trainer: [    INFO] - Validating at iteration 182000...
+2025-08-01 04:36:47 -              Trainer: [    INFO] - Validation results | SSIM=0.9594, PSNR=35.89
+2025-08-01 04:37:58 -              Trainer: [    INFO] - Epoch [544/600] completed in 109.14s | Loss: 0.0073 | SSIM: 0.9770 | PSNR: 38.45 | LR: 0.00000627
+2025-08-01 04:39:39 -              Trainer: [    INFO] - Epoch [545/600] completed in 100.27s | Loss: 0.0074 | SSIM: 0.9768 | PSNR: 38.45 | LR: 0.00000609
+2025-08-01 04:41:19 -              Trainer: [    INFO] - Epoch [546/600] completed in 100.45s | Loss: 0.0073 | SSIM: 0.9769 | PSNR: 38.47 | LR: 0.00000591
+2025-08-01 04:41:47 -              Trainer: [    INFO] - Validating at iteration 183000...
+2025-08-01 04:41:56 -              Trainer: [    INFO] - Validation results | SSIM=0.9593, PSNR=35.90
+2025-08-01 04:41:56 -              Trainer: [    INFO] - saved new best model at iter 183000 with PSNR 35.90 to ./checkpoints_SRD/model_best_SRD.pth
+2025-08-01 04:43:09 -              Trainer: [    INFO] - Epoch [547/600] completed in 109.53s | Loss: 0.0073 | SSIM: 0.9770 | PSNR: 38.46 | LR: 0.00000574
+2025-08-01 04:44:49 -              Trainer: [    INFO] - Epoch [548/600] completed in 100.23s | Loss: 0.0074 | SSIM: 0.9770 | PSNR: 38.42 | LR: 0.00000556
+2025-08-01 04:46:29 -              Trainer: [    INFO] - Epoch [549/600] completed in 100.16s | Loss: 0.0073 | SSIM: 0.9769 | PSNR: 38.47 | LR: 0.00000539
+2025-08-01 04:46:55 -              Trainer: [    INFO] - Validating at iteration 184000...
+2025-08-01 04:47:04 -              Trainer: [    INFO] - Validation results | SSIM=0.9595, PSNR=35.90
+2025-08-01 04:47:04 -              Trainer: [    INFO] - saved new best model at iter 184000 with PSNR 35.90 to ./checkpoints_SRD/model_best_SRD.pth
+2025-08-01 04:48:18 -              Trainer: [    INFO] - Epoch [550/600] completed in 109.17s | Loss: 0.0073 | SSIM: 0.9770 | PSNR: 38.49 | LR: 0.00000522
+2025-08-01 04:48:18 -              Trainer: [    INFO] - Saved periodic model checkpoint to checkpoints_SRD/model_epoch_550_SRD.pth
+2025-08-01 04:49:59 -              Trainer: [    INFO] - Epoch [551/600] completed in 100.35s | Loss: 0.0073 | SSIM: 0.9770 | PSNR: 38.45 | LR: 0.00000506
+2025-08-01 04:51:39 -              Trainer: [    INFO] - Epoch [552/600] completed in 100.22s | Loss: 0.0073 | SSIM: 0.9769 | PSNR: 38.47 | LR: 0.00000489
+2025-08-01 04:52:03 -              Trainer: [    INFO] - Validating at iteration 185000...
+2025-08-01 04:52:13 -              Trainer: [    INFO] - Validation results | SSIM=0.9594, PSNR=35.90
+2025-08-01 04:53:28 -              Trainer: [    INFO] - Epoch [553/600] completed in 109.48s | Loss: 0.0074 | SSIM: 0.9769 | PSNR: 38.43 | LR: 0.00000473
+2025-08-01 04:55:09 -              Trainer: [    INFO] - Epoch [554/600] completed in 100.41s | Loss: 0.0073 | SSIM: 0.9770 | PSNR: 38.49 | LR: 0.00000458
+2025-08-01 04:56:49 -              Trainer: [    INFO] - Epoch [555/600] completed in 100.17s | Loss: 0.0073 | SSIM: 0.9770 | PSNR: 38.46 | LR: 0.00000442
+2025-08-01 04:57:12 -              Trainer: [    INFO] - Validating at iteration 186000...
+2025-08-01 04:57:21 -              Trainer: [    INFO] - Validation results | SSIM=0.9594, PSNR=35.91
+2025-08-01 04:57:21 -              Trainer: [    INFO] - saved new best model at iter 186000 with PSNR 35.91 to ./checkpoints_SRD/model_best_SRD.pth
+2025-08-01 04:58:38 -              Trainer: [    INFO] - Epoch [556/600] completed in 109.39s | Loss: 0.0074 | SSIM: 0.9770 | PSNR: 38.41 | LR: 0.00000427
+2025-08-01 05:00:19 -              Trainer: [    INFO] - Epoch [557/600] completed in 100.48s | Loss: 0.0073 | SSIM: 0.9769 | PSNR: 38.48 | LR: 0.00000412
+2025-08-01 05:01:59 -              Trainer: [    INFO] - Epoch [558/600] completed in 100.26s | Loss: 0.0073 | SSIM: 0.9769 | PSNR: 38.45 | LR: 0.00000397
+2025-08-01 05:02:20 -              Trainer: [    INFO] - Validating at iteration 187000...
+2025-08-01 05:02:30 -              Trainer: [    INFO] - Validation results | SSIM=0.9592, PSNR=35.90
+2025-08-01 05:03:48 -              Trainer: [    INFO] - Epoch [559/600] completed in 109.07s | Loss: 0.0073 | SSIM: 0.9769 | PSNR: 38.45 | LR: 0.00000383
+2025-08-01 05:05:28 -              Trainer: [    INFO] - Epoch [560/600] completed in 100.22s | Loss: 0.0073 | SSIM: 0.9769 | PSNR: 38.47 | LR: 0.00000368
+2025-08-01 05:07:09 -              Trainer: [    INFO] - Epoch [561/600] completed in 100.38s | Loss: 0.0073 | SSIM: 0.9771 | PSNR: 38.48 | LR: 0.00000354
+2025-08-01 05:07:29 -              Trainer: [    INFO] - Validating at iteration 188000...
+2025-08-01 05:07:38 -              Trainer: [    INFO] - Validation results | SSIM=0.9594, PSNR=35.91
+2025-08-01 05:08:58 -              Trainer: [    INFO] - Epoch [562/600] completed in 108.95s | Loss: 0.0073 | SSIM: 0.9770 | PSNR: 38.50 | LR: 0.00000341
+2025-08-01 05:10:38 -              Trainer: [    INFO] - Epoch [563/600] completed in 100.30s | Loss: 0.0073 | SSIM: 0.9771 | PSNR: 38.49 | LR: 0.00000327
+2025-08-01 05:12:19 -              Trainer: [    INFO] - Epoch [564/600] completed in 100.39s | Loss: 0.0073 | SSIM: 0.9770 | PSNR: 38.49 | LR: 0.00000314
+2025-08-01 05:12:37 -              Trainer: [    INFO] - Validating at iteration 189000...
+2025-08-01 05:12:46 -              Trainer: [    INFO] - Validation results | SSIM=0.9594, PSNR=35.91
+2025-08-01 05:12:46 -              Trainer: [    INFO] - saved new best model at iter 189000 with PSNR 35.91 to ./checkpoints_SRD/model_best_SRD.pth
+2025-08-01 05:14:08 -              Trainer: [    INFO] - Epoch [565/600] completed in 109.51s | Loss: 0.0073 | SSIM: 0.9770 | PSNR: 38.48 | LR: 0.00000301
+2025-08-01 05:15:48 -              Trainer: [    INFO] - Epoch [566/600] completed in 100.29s | Loss: 0.0073 | SSIM: 0.9769 | PSNR: 38.45 | LR: 0.00000289
+2025-08-01 05:17:29 -              Trainer: [    INFO] - Epoch [567/600] completed in 100.36s | Loss: 0.0073 | SSIM: 0.9771 | PSNR: 38.50 | LR: 0.00000276
+2025-08-01 05:17:46 -              Trainer: [    INFO] - Validating at iteration 190000...
+2025-08-01 05:17:55 -              Trainer: [    INFO] - Validation results | SSIM=0.9594, PSNR=35.91
+2025-08-01 05:17:55 -              Trainer: [    INFO] - saved new best model at iter 190000 with PSNR 35.91 to ./checkpoints_SRD/model_best_SRD.pth
+2025-08-01 05:19:18 -              Trainer: [    INFO] - Epoch [568/600] completed in 109.47s | Loss: 0.0073 | SSIM: 0.9770 | PSNR: 38.49 | LR: 0.00000264
+2025-08-01 05:20:59 -              Trainer: [    INFO] - Epoch [569/600] completed in 100.47s | Loss: 0.0073 | SSIM: 0.9770 | PSNR: 38.52 | LR: 0.00000252
+2025-08-01 05:22:39 -              Trainer: [    INFO] - Epoch [570/600] completed in 100.24s | Loss: 0.0073 | SSIM: 0.9771 | PSNR: 38.50 | LR: 0.00000241
+2025-08-01 05:22:54 -              Trainer: [    INFO] - Validating at iteration 191000...
+2025-08-01 05:23:03 -              Trainer: [    INFO] - Validation results | SSIM=0.9594, PSNR=35.91
+2025-08-01 05:24:28 -              Trainer: [    INFO] - Epoch [571/600] completed in 109.15s | Loss: 0.0073 | SSIM: 0.9770 | PSNR: 38.50 | LR: 0.00000230
+2025-08-01 05:26:08 -              Trainer: [    INFO] - Epoch [572/600] completed in 100.37s | Loss: 0.0073 | SSIM: 0.9771 | PSNR: 38.45 | LR: 0.00000219
+2025-08-01 05:27:49 -              Trainer: [    INFO] - Epoch [573/600] completed in 100.17s | Loss: 0.0073 | SSIM: 0.9771 | PSNR: 38.51 | LR: 0.00000208
+2025-08-01 05:28:02 -              Trainer: [    INFO] - Validating at iteration 192000...
+2025-08-01 05:28:12 -              Trainer: [    INFO] - Validation results | SSIM=0.9594, PSNR=35.92
+2025-08-01 05:28:12 -              Trainer: [    INFO] - saved new best model at iter 192000 with PSNR 35.92 to ./checkpoints_SRD/model_best_SRD.pth
+2025-08-01 05:29:38 -              Trainer: [    INFO] - Epoch [574/600] completed in 109.53s | Loss: 0.0073 | SSIM: 0.9771 | PSNR: 38.49 | LR: 0.00000197
+2025-08-01 05:31:18 -              Trainer: [    INFO] - Epoch [575/600] completed in 100.37s | Loss: 0.0073 | SSIM: 0.9770 | PSNR: 38.45 | LR: 0.00000187
+2025-08-01 05:32:59 -              Trainer: [    INFO] - Epoch [576/600] completed in 100.26s | Loss: 0.0073 | SSIM: 0.9771 | PSNR: 38.51 | LR: 0.00000177
+2025-08-01 05:33:11 -              Trainer: [    INFO] - Validating at iteration 193000...
+2025-08-01 05:33:20 -              Trainer: [    INFO] - Validation results | SSIM=0.9594, PSNR=35.91
+2025-08-01 05:34:48 -              Trainer: [    INFO] - Epoch [577/600] completed in 109.28s | Loss: 0.0073 | SSIM: 0.9770 | PSNR: 38.52 | LR: 0.00000167
+2025-08-01 05:36:28 -              Trainer: [    INFO] - Epoch [578/600] completed in 100.42s | Loss: 0.0073 | SSIM: 0.9770 | PSNR: 38.50 | LR: 0.00000158
+2025-08-01 05:38:09 -              Trainer: [    INFO] - Epoch [579/600] completed in 100.32s | Loss: 0.0073 | SSIM: 0.9771 | PSNR: 38.53 | LR: 0.00000149
+2025-08-01 05:38:20 -              Trainer: [    INFO] - Validating at iteration 194000...
+2025-08-01 05:38:29 -              Trainer: [    INFO] - Validation results | SSIM=0.9594, PSNR=35.91
+2025-08-01 05:39:58 -              Trainer: [    INFO] - Epoch [580/600] completed in 109.75s | Loss: 0.0073 | SSIM: 0.9771 | PSNR: 38.49 | LR: 0.00000140
+2025-08-01 05:41:39 -              Trainer: [    INFO] - Epoch [581/600] completed in 100.32s | Loss: 0.0073 | SSIM: 0.9769 | PSNR: 38.46 | LR: 0.00000131
+2025-08-01 05:43:19 -              Trainer: [    INFO] - Epoch [582/600] completed in 100.56s | Loss: 0.0073 | SSIM: 0.9771 | PSNR: 38.49 | LR: 0.00000123
+2025-08-01 05:43:29 -              Trainer: [    INFO] - Validating at iteration 195000...
+2025-08-01 05:43:38 -              Trainer: [    INFO] - Validation results | SSIM=0.9595, PSNR=35.91
+2025-08-01 05:45:09 -              Trainer: [    INFO] - Epoch [583/600] completed in 109.27s | Loss: 0.0073 | SSIM: 0.9771 | PSNR: 38.48 | LR: 0.00000115
+2025-08-01 05:46:49 -              Trainer: [    INFO] - Epoch [584/600] completed in 100.20s | Loss: 0.0073 | SSIM: 0.9771 | PSNR: 38.52 | LR: 0.00000107
+2025-08-01 05:48:29 -              Trainer: [    INFO] - Epoch [585/600] completed in 100.34s | Loss: 0.0073 | SSIM: 0.9771 | PSNR: 38.47 | LR: 0.00000100
+2025-08-01 05:48:37 -              Trainer: [    INFO] - Validating at iteration 196000...
+2025-08-01 05:48:47 -              Trainer: [    INFO] - Validation results | SSIM=0.9594, PSNR=35.92
+2025-08-01 05:50:19 -              Trainer: [    INFO] - Epoch [586/600] completed in 109.61s | Loss: 0.0073 | SSIM: 0.9772 | PSNR: 38.49 | LR: 0.00000093
+2025-08-01 05:51:59 -              Trainer: [    INFO] - Epoch [587/600] completed in 100.31s | Loss: 0.0073 | SSIM: 0.9770 | PSNR: 38.50 | LR: 0.00000086
+2025-08-01 05:53:39 -              Trainer: [    INFO] - Epoch [588/600] completed in 100.17s | Loss: 0.0073 | SSIM: 0.9771 | PSNR: 38.51 | LR: 0.00000079
+2025-08-01 05:53:46 -              Trainer: [    INFO] - Validating at iteration 197000...
+2025-08-01 05:53:55 -              Trainer: [    INFO] - Validation results | SSIM=0.9595, PSNR=35.92
+2025-08-01 05:55:28 -              Trainer: [    INFO] - Epoch [589/600] completed in 108.97s | Loss: 0.0073 | SSIM: 0.9770 | PSNR: 38.48 | LR: 0.00000072
+2025-08-01 05:57:09 -              Trainer: [    INFO] - Epoch [590/600] completed in 100.35s | Loss: 0.0073 | SSIM: 0.9770 | PSNR: 38.49 | LR: 0.00000066
+2025-08-01 05:58:49 -              Trainer: [    INFO] - Epoch [591/600] completed in 100.26s | Loss: 0.0073 | SSIM: 0.9771 | PSNR: 38.48 | LR: 0.00000060
+2025-08-01 05:58:54 -              Trainer: [    INFO] - Validating at iteration 198000...
+2025-08-01 05:59:03 -              Trainer: [    INFO] - Validation results | SSIM=0.9594, PSNR=35.91
+2025-08-01 06:00:38 -              Trainer: [    INFO] - Epoch [592/600] completed in 109.16s | Loss: 0.0073 | SSIM: 0.9769 | PSNR: 38.46 | LR: 0.00000055
+2025-08-01 06:02:18 -              Trainer: [    INFO] - Epoch [593/600] completed in 100.19s | Loss: 0.0073 | SSIM: 0.9772 | PSNR: 38.48 | LR: 0.00000049
+2025-08-01 06:03:58 -              Trainer: [    INFO] - Epoch [594/600] completed in 100.21s | Loss: 0.0073 | SSIM: 0.9770 | PSNR: 38.49 | LR: 0.00000044
+2025-08-01 06:04:02 -              Trainer: [    INFO] - Validating at iteration 199000...
+2025-08-01 06:04:11 -              Trainer: [    INFO] - Validation results | SSIM=0.9595, PSNR=35.92
+2025-08-01 06:05:47 -              Trainer: [    INFO] - Epoch [595/600] completed in 108.92s | Loss: 0.0073 | SSIM: 0.9771 | PSNR: 38.45 | LR: 0.00000040
+2025-08-01 06:07:28 -              Trainer: [    INFO] - Epoch [596/600] completed in 100.19s | Loss: 0.0073 | SSIM: 0.9771 | PSNR: 38.51 | LR: 0.00000035
+2025-08-01 06:09:08 -              Trainer: [    INFO] - Epoch [597/600] completed in 100.18s | Loss: 0.0073 | SSIM: 0.9770 | PSNR: 38.44 | LR: 0.00000031
+2025-08-01 06:09:10 -              Trainer: [    INFO] - Validating at iteration 200000...
+2025-08-01 06:09:19 -              Trainer: [    INFO] - Validation results | SSIM=0.9595, PSNR=35.92
+2025-08-01 06:10:57 -              Trainer: [    INFO] - Epoch [598/600] completed in 109.02s | Loss: 0.0073 | SSIM: 0.9771 | PSNR: 38.54 | LR: 0.00000027
+2025-08-01 06:12:37 -              Trainer: [    INFO] - Epoch [599/600] completed in 100.19s | Loss: 0.0073 | SSIM: 0.9771 | PSNR: 38.52 | LR: 0.00000023
+2025-08-01 06:14:17 -              Trainer: [    INFO] - Validating at iteration 201000...
+2025-08-01 06:14:26 -              Trainer: [    INFO] - Validation results | SSIM=0.9594, PSNR=35.92
+2025-08-01 06:14:27 -              Trainer: [    INFO] - Epoch [600/600] completed in 109.60s | Loss: 0.0073 | SSIM: 0.9769 | PSNR: 38.48 | LR: 0.00000020
+2025-08-01 06:14:27 -              Trainer: [    INFO] - Saved periodic model checkpoint to checkpoints_SRD/model_epoch_600_SRD.pth
+2025-08-01 06:14:27 -              Trainer: [    INFO] - Saved final model to ./checkpoints_SRD/model_final_SRD.pth
+2025-08-01 06:14:27 -              Trainer: [    INFO] - Training completed successfully 
+2025-08-01 06:14:27 -              Trainer: [    INFO] - ================================================================================
+2025-08-01 06:14:27 -              Trainer: [    INFO] - TRAINING SESSION COMPLETED
+2025-08-01 06:14:27 -              Trainer: [    INFO] - Best PSNR: 35.92 at iteration 192000
+2025-08-01 06:14:27 -              Trainer: [    INFO] - ================================================================================
