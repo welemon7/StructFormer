@@ -1,2 +1,2 @@
-# PhaseorFormer
-PhaseorFormer: ShadowRemoval
+# StructFormer
+StructFormer: ShadowRemoval
